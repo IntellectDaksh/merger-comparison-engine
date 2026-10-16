@@ -15,6 +15,7 @@
 | Browser keyboard check | Tab reached a disclosure control with a visible solid focus outline |
 | Browser narrow layout at 390 px | Page width stayed inside viewport; table regions support horizontal inspection; viewport restored |
 | Optional PDF parser | Valid one-page PDF parsed; review remained mandatory |
+| Vercel production site | Live report rendered from the same 114-observation snapshot; document review is hidden |
 
 Environment: Windows, Python **3.12.14**, optional **pypdf 6.10.0**, bundled Node.js. Python standard library is sufficient except PDF extraction. No new runtime dependency was installed.
 
@@ -44,6 +45,6 @@ A separate reviewer found import validation, unsupported favourable verdicts, pe
 - No synthetic control, exhaustive exchange-wide discovery, licensed scheduled ingestion, OCR or fully automated financial table extraction. Local keyword discovery and reviewed data configuration are implemented.
 - The rule function exercises all five verdict categories, but **automatic report-level causal adjudication remains disabled**. A positive residual or analyst-supplied flags cannot independently establish Genuine improvement.
 - No full screen-reader audit, cross-browser suite, load test, adversarial PDF resource-exhaustion test or penetration test. PDF parsing is local and size-limited, but not OS-sandboxed; use trusted/permitted documents.
-- No public deployment or commercial/legal clearance. CCI exemption currency, data licences, regulatory report-publishing obligations and transaction-specific approvals still require qualified review.
+- The public site is a read-only historical research demonstration, not commercial/legal clearance. CCI exemption currency, data licences, regulatory report-publishing obligations and transaction-specific approvals still require qualified review.
 
 The visible verdict is **Too early to tell** with **Weak causal evidence**, while selected descriptive arithmetic has Moderate evidence. The output makes these limits visible instead of substituting estimates for missing facts.

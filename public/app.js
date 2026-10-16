@@ -51,9 +51,9 @@ if (typeof document !== "undefined") {
   let pdfFile = null;
   let draftChanged = false;
   const localReview = ["127.0.0.1", "localhost"].includes(location.hostname);
-  if (!localReview) {
-    $("review").hidden = true;
-    document.querySelector('a[href="#review"]').hidden = true;
+  if (localReview) {
+    $("review").hidden = false;
+    document.querySelector('a[href="#review"]').hidden = false;
   }
 
   function sourceLinks(references) {

@@ -1,6 +1,8 @@
-# Merger Comparison Engine
+# [🌐 Merger Comparison Engine — Live Demo ↗](https://merger-comparison-engine.vercel.app)
 
 A research application answering whether a bank merger changed the economics or the appearance of performance. Includes the real **Bank of Baroda / Vijaya Bank / Dena Bank** amalgamation effective 1 April 2019, primary-source evidence, reproducible arithmetic, peer sensitivity and a dated legal applicability matrix.
+
+The live demo is an interactive, read-only historical report. Document review is available in the local version below.
 
 ## Run
 
