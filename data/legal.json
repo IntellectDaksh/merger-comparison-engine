@@ -1,0 +1,453 @@
+{
+  "as_of": "2026-10-16",
+  "summary": "Primary-source applicability research for the historical BoB/Vijaya/Dena 2019 case and an India-focused product. This is a dated research matrix, not a legal opinion or launch clearance. Current rules are separated from historical and future-effective rules; unresolved rights and exemption questions block automatic legal conclusions.",
+  "rows": [
+    {
+      "id": "PSB-2019",
+      "area": "Historical merger authority",
+      "rule": "BoB/Vijaya/Dena is a statutory nationalised-bank amalgamation, not a private-bank section 44A merger.",
+      "jurisdiction": "India",
+      "entities": "Bank of Baroda; Vijaya Bank; Dena Bank",
+      "transaction_type": "2019 statutory amalgamation",
+      "provision": "Banking Companies (Acquisition and Transfer of Undertakings) Acts 1970 and 1980, section 9; G.S.R. 2(E), Scheme clauses 1(2), 3–4",
+      "effective_date": "Notification 2019-01-02; scheme effective 2019-04-01",
+      "evidence_urls": [
+        "https://financialservices.gov.in/beta/sites/default/files/2022-10/Amalgamation%20Scheme%20Bank%20of%20Baroda%20%202019%20dated%202.1.2019.pdf"
+      ],
+      "required_action": "Store the Gazette and effective date; retain original entity identities and scheme-specific transfers. Do not infer NCLT approval or acquisition accounting from the word merger.",
+      "legal_review_needed": false,
+      "verification_status": "Verified historical Gazette; false means no further research needed for this narrow classification, not legal clearance."
+    },
+    {
+      "id": "BANK-VOLUNTARY",
+      "area": "Current merger authority",
+      "rule": "Banking-company voluntary amalgamation requires the applicable RBI route and approvals.",
+      "jurisdiction": "India",
+      "entities": "Banking companies within paragraph 3; special bank classes require their own directions",
+      "transaction_type": "Bank-to-bank voluntary amalgamation",
+      "provision": "Banking Regulation Act 1949, section 44A; RBI Commercial Banks – Voluntary Amalgamation Directions 2025, paragraphs 3, 6–13",
+      "effective_date": "2025-11-28 immediate commencement",
+      "evidence_urls": [
+        "https://www.indiacode.nic.in/bitstream/123456789/1885/1/A1949-10.pdf",
+        "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13165"
+      ],
+      "required_action": "Record board approvals, shareholder resolution, swap valuation and RBI sanction separately. Classify PSBs separately. Check entity-specific directions before enabling an additional bank case.",
+      "legal_review_needed": true,
+      "verification_status": "Current RBI text verified; 2016 direction is historical, not the current default."
+    },
+    {
+      "id": "BANK-NBFC",
+      "area": "Current merger authority",
+      "rule": "A bank/NBFC amalgamation also needs the tribunal route and RBI NOC before approaching it.",
+      "jurisdiction": "India",
+      "entities": "Banking company and NBFC",
+      "transaction_type": "Bank-with-NBFC or reverse amalgamation",
+      "provision": "RBI Commercial Banks – Voluntary Amalgamation Directions 2025, paragraphs 6(3), 9 and 12; Companies Act 2013 sections 230–234",
+      "effective_date": "2025-11-28 for RBI direction",
+      "evidence_urls": [
+        "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13165",
+        "https://www.mca.gov.in/content/dam/mca/pdf/CompaniesAct2013.pdf"
+      ],
+      "required_action": "Capture RBI NOC, tribunal order, appointed/effective dates, conversion of accounting basis and any conditional relief. Keep an acquisition or loan-book transfer out of the merger pipeline.",
+      "legal_review_needed": true,
+      "verification_status": "RBI paragraph 12 verified; transaction-specific orders remain necessary."
+    },
+    {
+      "id": "BANK-RESOLUTION",
+      "area": "Special resolution",
+      "rule": "Section 45 reconstruction/amalgamation is a special statutory process and must not be labelled an ordinary voluntary merger.",
+      "jurisdiction": "India",
+      "entities": "Banking institution subject to section 45 scheme",
+      "transaction_type": "Reconstruction or resolution amalgamation",
+      "provision": "Banking Regulation Act 1949, section 45, particularly subsections (4) and (7)",
+      "effective_date": "Act as amended; effective date is the relevant government scheme date",
+      "evidence_urls": [
+        "https://www.indiacode.nic.in/bitstream/123456789/1885/1/A1949-10.pdf"
+      ],
+      "required_action": "Require the actual RBI/government scheme and any moratorium terms; identify creditor, depositor and capital-treatment changes independently.",
+      "legal_review_needed": true,
+      "verification_status": "Statutory route verified; no resolution scheme is presumed applicable to BoB 2019."
+    },
+    {
+      "id": "NBFC-SCHEME",
+      "area": "Current merger authority",
+      "rule": "NBFC amalgamations have NCLT and RBI requirements with distinct control thresholds.",
+      "jurisdiction": "India",
+      "entities": "NBFCs across layers; counterpart NBFC or non-NBFC",
+      "transaction_type": "NBFC amalgamation",
+      "provision": "RBI NBFC – Voluntary Amalgamation Directions 2025, paragraphs 3, 6 and 7; Companies Act sections 230–234",
+      "effective_date": "2025-11-28 immediate commencement",
+      "evidence_urls": [
+        "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12963",
+        "https://www.mca.gov.in/content/dam/mca/pdf/CompaniesAct2013.pdf"
+      ],
+      "required_action": "Record both NBFC NOCs for NBFC/NBFC cases; track surrendered registration. Check control, 26% shareholding and more-than-30% director-change triggers and the registration status of a surviving non-NBFC.",
+      "legal_review_needed": true,
+      "verification_status": "Official paragraph 7 verified; applicable counterparty branch must be selected."
+    },
+    {
+      "id": "NBFC-CONTROL",
+      "area": "Current approval",
+      "rule": "Acquisition of control is distinct from a merger; prior RBI permission can be required without changing management.",
+      "jurisdiction": "India",
+      "entities": "NBFC categories specified in paragraph 3; HFC/SPD exceptions differ",
+      "transaction_type": "Share acquisition or transfer of control",
+      "provision": "RBI NBFC – Acquisition of Shareholding or Control Directions 2025, paragraphs 3, 6–10",
+      "effective_date": "2025-11-28",
+      "evidence_urls": [
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=12964"
+      ],
+      "required_action": "Classify acquisition separately; test control/26% triggers and special-category conditions. Record RBI approval and applicable 30-day public notice before ownership/control transfer.",
+      "legal_review_needed": true,
+      "verification_status": "Official text verified; no generic threshold is applied to every NBFC subtype."
+    },
+    {
+      "id": "COMPANIES",
+      "area": "Company scheme",
+      "rule": "Companies Act schemes require stakeholder/regulator notices, tribunal sanction and accounting-standard support where applicable.",
+      "jurisdiction": "India",
+      "entities": "Companies including relevant NBFCs",
+      "transaction_type": "Companies Act merger/demerger/arrangement",
+      "provision": "Companies Act 2013 sections 230(5)–(6), 232(2)–(3), 232(5)–(6)",
+      "effective_date": "Transaction-date consolidated law required; sections 230–232 operational framework from December 2016",
+      "evidence_urls": [
+        "https://www.mca.gov.in/content/dam/mca/pdf/CompaniesAct2013.pdf"
+      ],
+      "required_action": "Collect the scheme, notices, auditor accounting certificate, NCLT order and Registrar filing. Distinguish appointed date from legal effective date and first combined reporting.",
+      "legal_review_needed": true,
+      "verification_status": "Official Act text retrieved; exact commencement notification and later rule amendments not exhaustively reconciled."
+    },
+    {
+      "id": "LISTING",
+      "area": "Listing disclosures",
+      "rule": "Listed transactions and results carry exchange/SEBI disclosure and, for applicable schemes, observation/no-objection requirements.",
+      "jurisdiction": "India",
+      "entities": "Listed banks/NBFCs; distinguish equity and debt listings",
+      "transaction_type": "Merger; acquisition; financial-results publication",
+      "provision": "SEBI LODR Regulations 2015: regulations 11, 30 with Schedule III, 33, 37 and 94; 59A for applicable debt schemes; Scheme Master Circular 2023",
+      "effective_date": "LODR official index last amended 2026-07-14; scheme master circular 2023-06-20, subject to subsequent circulars",
+      "evidence_urls": [
+        "https://www.sebi.gov.in/legal/regulations/jul-2026/securities-and-exchange-board-of-india-listing-obligations-and-disclosure-requirements-regulations-2015-last-amended-on-july-14-2026-_102974.html",
+        "https://www.sebi.gov.in/legal/master-circulars/jun-2023/master-circular-on-scheme-of-arrangement_72839.html",
+        "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&smid=0+&ssid=3"
+      ],
+      "required_action": "Retain event/result filings, exchange observations and approvals. Do not impose regulation 37 identically on every statutory-bank case; check exemptions and transaction-date rules. Verify subsequent scheme circulars before live legal assertions.",
+      "legal_review_needed": true,
+      "verification_status": "Current consolidated LODR landing page verified; every operative amendment/exception and current exchange SOP not exhaustively checked."
+    },
+    {
+      "id": "CCI-HISTORICAL-PSB",
+      "area": "Competition / historical",
+      "rule": "The statutory nationalised-bank route had a specific ten-year combinations exemption covering the 2019 period.",
+      "jurisdiction": "India",
+      "entities": "Nationalised banks under the 1970/1980 Acts",
+      "transaction_type": "Reconstitution, business transfer, amalgamation",
+      "provision": "Competition Act sections 5, 6 and 54; S.O. 2828(E) published 2017-08-30",
+      "effective_date": "Ten years from 2017-08-30",
+      "evidence_urls": [
+        "https://www.cci.gov.in/faqs",
+        "https://financialservices.gov.in/beta/sites/default/files/2022-10/Amalgamation%20Scheme%20Bank%20of%20Baroda%20%202019%20dated%202.1.2019.pdf"
+      ],
+      "required_action": "Store this basis against BoB 2019; do not describe it as a CCI merger approval or extend it to all banks/NBFCs.",
+      "legal_review_needed": true,
+      "verification_status": "CCI official FAQ confirms scope and duration; original exemption Gazette not independently retrieved."
+    },
+    {
+      "id": "CCI-THRESHOLDS",
+      "area": "Competition / current",
+      "rule": "Any applicable section 5 threshold can trigger combinations review, including the deal-value test.",
+      "jurisdiction": "India",
+      "entities": "Enterprises/groups including banks and NBFCs unless exempt",
+      "transaction_type": "Acquisition; merger; amalgamation",
+      "provision": "Competition Act sections 5(a)–(d), 6; CCI Combinations Regulations 2024 regulation 4(1)–(2)",
+      "effective_date": "Raised financial thresholds March 2024; 2024 combinations regime effective 2024-09-10; current 2026 CCI guidance retrieved",
+      "evidence_urls": [
+        "https://www.cci.gov.in/pdfs/FAQ_Book_English.pdf",
+        "https://www.cci.gov.in/images/publications_booklet/en/competition-advocacy-booklet-2026-english1779277830.pdf",
+        "https://www.cci.gov.in/images/legalframeworkregulation/en/gazette-notification-published-on-09-september-2024-regarding-the-competition-commission-of-india1731298584.pdf"
+      ],
+      "required_action": "Test Indian enterprise assets > INR 2,500 crore or turnover > INR 7,500 crore; group > INR 10,000/30,000 crore. Also test worldwide/India limbs and transaction value > INR 2,000 crore with substantial Indian operations. Do not close a notifiable deal before the applicable approval/standstill process.",
+      "legal_review_needed": true,
+      "verification_status": "Official 2026 guidance supports thresholds. No deal-level legal calculation is performed."
+    },
+    {
+      "id": "CCI-EXEMPTIONS",
+      "area": "Competition / expiry control",
+      "rule": "A web FAQ is insufficient evidence that a time-limited exemption has been renewed.",
+      "jurisdiction": "India",
+      "entities": "Small targets; section 45 banking companies; other exempt classes",
+      "transaction_type": "Potentially notifiable combination",
+      "provision": "S.O. 1131(E), 2024-03-07; Competition Act sections 5 and 54; S.O. 1034(E), 2022-03-11 for qualifying section 45 banks",
+      "effective_date": "2024 small-target notification: two-year duration; section 45 notification: five-year duration from publication",
+      "evidence_urls": [
+        "https://www.cci.gov.in/combination/combination/filing-of-combination-notice/introduction",
+        "https://www.cci.gov.in/faqs"
+      ],
+      "required_action": "Do not auto-apply the INR 450 crore assets/1,250 crore turnover exemption on 2026-10-16: the cited two-year notification expired and renewal was not verified. Require current Gazette/legal review; independently assess deal-value notification and any special exemption.",
+      "legal_review_needed": true,
+      "verification_status": "Unresolved current exemption: CCI pages still state thresholds while describing a two-year sunset. No renewal inferred."
+    },
+    {
+      "id": "BANK-ACCOUNTING",
+      "area": "Bank accounting / current",
+      "rule": "Bank financial presentation follows Banking Regulation Act formats and RBI directions; Ind AS implementation remains deferred in the retrieved current statement direction.",
+      "jurisdiction": "India",
+      "entities": "Commercial banks as defined by paragraph 3, including corresponding new banks",
+      "transaction_type": "Financial reporting; merger comparability",
+      "provision": "Banking Regulation Act section 29 / Third Schedule; RBI Commercial Banks Financial Statements Directions 2025 paragraphs 3–5 and Chapter III, Ind AS implementation disclosure",
+      "effective_date": "2025-11-28; retrieved consolidated direction updated 2026-07-01",
+      "evidence_urls": [
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13143"
+      ],
+      "required_action": "Tag accounting basis and consolidation scope by period. Use actual scheme/accounting notes for merger recognition; never assume Ind AS 103 purchase accounting for BoB 2019.",
+      "legal_review_needed": true,
+      "verification_status": "Current official text verified; use contemporaneous filings for historical reporting."
+    },
+    {
+      "id": "BANK-PRUDENTIAL",
+      "area": "Bank prudential definitions",
+      "rule": "NPA/provision and capital definitions are versioned RBI concepts; neither capital ratios nor NPA ratios may be averaged.",
+      "jurisdiction": "India",
+      "entities": "Relevant commercial banks",
+      "transaction_type": "Post-merger prudential reporting and historical reconstruction",
+      "provision": "RBI Commercial Banks IRACP Directions 2025; Prudential Norms on Capital Adequacy Directions 2025; individual disclosure tables",
+      "effective_date": "Current index: IRACP updated 2026-10-01; capital updated 2026-10-07",
+      "evidence_urls": [
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13146",
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13159",
+        "https://www.rbi.org.in/scripts/BS_ViewMasterDirections.aspx"
+      ],
+      "required_action": "Use disclosed regulatory numerators, net/gross denominators, risk-weighted assets and capital deductions. Keep period-specific historic rules. Block calculated capital conclusions without compatible underlying amounts.",
+      "legal_review_needed": true,
+      "verification_status": "Current titles/update dates verified; full updated operative text was not exposed by the retrieved pages. No compliance certificate or capital-threshold determination."
+    },
+    {
+      "id": "BANK-ECL-FUTURE",
+      "area": "Announced future prudential change",
+      "rule": "The 2026 bank ECL direction is issued but its commencement is future relative to this review.",
+      "jurisdiction": "India",
+      "entities": "Banks within the 2026 direction's applicability",
+      "transaction_type": "Reporting transition, not merger-specific relief",
+      "provision": "RBI Commercial Banks Asset Classification, Provisioning and Income Recognition Directions 2026, paragraphs 2–3, 19, 106–112 and 147–148",
+      "effective_date": "Issued 2026-04-27; effective 2027-04-01; transitional CET1 add-back through 2030–31",
+      "evidence_urls": [
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13400"
+      ],
+      "required_action": "Do not apply future ECL retroactively to 2019. For future cases show fully loaded and transitional capital separately; capture opening-equity adjustments and first reporting dates.",
+      "legal_review_needed": true,
+      "verification_status": "Official commencement, transition and disclosure paragraphs verified. This is enacted future direction, not currently applicable to FY2019–20."
+    },
+    {
+      "id": "NBFC-ACCOUNTING",
+      "area": "NBFC accounting",
+      "rule": "Ind AS eligibility is determined by Companies Rules and category; Ind AS ECL and regulatory NPA/provision measures need reconciliation.",
+      "jurisdiction": "India",
+      "entities": "NBFC categories/layers specified by paragraphs 3–8",
+      "transaction_type": "Merger and ongoing financial reporting",
+      "provision": "RBI NBFC Financial Statements Directions 2025 paragraphs 10–12 and 21(15); Companies (Ind AS) Rules 2015 rule 4",
+      "effective_date": "2025-11-28; consolidated version updated 2026-07-01",
+      "evidence_urls": [
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=12945"
+      ],
+      "required_action": "Store Ind AS applicability, stage-3 and regulatory NPA separately; use the disclosed ECL/IRACP bridge and impairment reserve. Determine Ind AS 103/common-control or AS 14 treatment from applicable standards and actual scheme; never infer it solely from transaction name.",
+      "legal_review_needed": true,
+      "verification_status": "RBI rule-4 reference and prudential-floor reconciliation verified; individual Ind AS scope and merger-accounting conclusions need specialist review."
+    },
+    {
+      "id": "NBFC-CAPITAL",
+      "area": "NBFC capital",
+      "rule": "NBFC capital requirements differ by category/layer and cannot inherit bank Basel metrics blindly.",
+      "jurisdiction": "India",
+      "entities": "Eligible NBFCs; Middle/Upper/Top layers and category exceptions",
+      "transaction_type": "Prudential comparison",
+      "provision": "RBI NBFC Prudential Norms on Capital Adequacy Directions 2025 paragraphs 3 and 6–10; NBFC IRACP Directions 2025",
+      "effective_date": "2025-11-28; capital updated 2026-07-01; IRACP indexed update 2026-10-01",
+      "evidence_urls": [
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=12959",
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=12948"
+      ],
+      "required_action": "Select entity/layer first. Paragraph 6 contains 15% CRAR for ML and above, 10% Tier 1 and UL 9% CET1, subject to scope/exceptions. Store RWA, deductions and applicable requirements; mark bank deposit mix inapplicable to non-deposit businesses.",
+      "legal_review_needed": true,
+      "verification_status": "Capital paragraph 6 verified; current IRACP landing page only. Not a completeness assessment of subtype-specific prudential rules."
+    },
+    {
+      "id": "RELIEF",
+      "area": "Temporary relief / accounting",
+      "rule": "Time-limited concessions and one-offs must be tied to their own legal authority and issuer use.",
+      "jurisdiction": "India",
+      "entities": "Banks/NBFCs with documented relief",
+      "transaction_type": "Merger transition; unrelated regulatory transition",
+      "provision": "Applicable RBI order/circular and issuer note; example: bank Financial Statements Directions Chapter III family-pension amortisation disclosure",
+      "effective_date": "Example applies from FY2021–22 for up to five years; no BoB 2019 merger-specific relief inferred",
+      "evidence_urls": [
+        "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13143"
+      ],
+      "required_action": "Record amount, eligibility, start/end date, P&L/equity impact and fully loaded alternative. An undisclosed relief adjustment stays unknown, not zero; do not count unrelated sector relief as merger synergy.",
+      "legal_review_needed": true,
+      "verification_status": "Example official provision verified; comprehensive BoB relief inventory and any case-specific RBI letters remain outside verified evidence."
+    },
+    {
+      "id": "TAX-HISTORICAL",
+      "area": "Tax / historical",
+      "rule": "Carry-forward and merger tax treatment depend on statutory eligibility and period; a merger does not automatically create a recognised tax asset.",
+      "jurisdiction": "India",
+      "entities": "BoB/Vijaya/Dena and other qualifying historical amalgamations",
+      "transaction_type": "2019 merger and earlier tax years",
+      "provision": "Income-tax Act 1961 sections 2(1B), 47(vi)/(vii), 72A and 72AA; section 72AA(ii) concerns corresponding new banks",
+      "effective_date": "Historical transaction/year law required; retrieved section 72AA is a later consolidated version, not the 2019 text",
+      "evidence_urls": [
+        "https://www.incometaxindia.gov.in/w/section-72aa-19"
+      ],
+      "required_action": "Use actual tax/DTA notes and verify retrospective amendments before attributing a tax benefit. Keep cash tax, recognised DTA and future tax-loss capacity separate; no benefit is computed from eligibility alone.",
+      "legal_review_needed": true,
+      "verification_status": "Current historical-Act provision verified; 2019 effective amendments and exact realised tax benefit not reconstructed."
+    },
+    {
+      "id": "TAX-CURRENT",
+      "area": "Tax / current",
+      "rule": "The Income-tax Act 2025 commenced in 2026; earlier-year proceedings retain transitional treatment under the former Act.",
+      "jurisdiction": "India",
+      "entities": "Indian taxpayers, including future merger cases",
+      "transaction_type": "Merger tax; reporting period selection",
+      "provision": "Income-tax Act 2025 sections 1(3), 2(6), 116 and 117 (including 117(1)(b) for corresponding new banks); repeal/savings framework; official transition guidance",
+      "effective_date": "2026-04-01; tax years beginning earlier remain under historical law per official FAQ",
+      "evidence_urls": [
+        "https://incometaxindia.gov.in/Documents/Act/Income-tax-Act-2025.pdf",
+        "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act"
+      ],
+      "required_action": "Version tax-law mappings by tax year. Section 117(2) limits eligible loss carry-forward for schemes effective from 2025-04-01 to eight tax years after the original predecessor loss year. Verify eligibility, loss vintage and subsequent amendments before computing any benefit; do not reuse 1961 section numbers as current-law answers.",
+      "legal_review_needed": true,
+      "verification_status": "New Act commencement, sections 2(6)/117 and official transition guidance verified; full section 116 conditions and 2026 amendments not exhaustively checked."
+    },
+    {
+      "id": "DATA-RIGHTS",
+      "area": "Data licensing",
+      "rule": "Public access does not grant automatic commercial redistribution rights.",
+      "jurisdiction": "India",
+      "entities": "Product operator; exchange/issuer/publisher data sources",
+      "transaction_type": "Retrieval, storage, display, export and resale",
+      "provision": "NSE Data Sharing & Usage Policy, sections 7 and 10–12; Copyright Act 1957 sections 14, 51 and 52",
+      "effective_date": "Source contract/policy version at retrieval; no universal licence date",
+      "evidence_urls": [
+        "https://www.nseindia.com/static/market-data/nse-data-policy",
+        "https://nsearchives.nseindia.com/s3fs-public/inline-files/NSE_Data_Sharing_and_Usage_Policy_0.pdf",
+        "https://www.indiacode.nic.in/bitstream/123456789/1367/1/a195714.pdf"
+      ],
+      "required_action": "Keep a per-source rights record: automation permitted, retention, excerpt/export rights and attribution. Default unverified feeds to manual review; link issuer originals and avoid redistributing full filings. No paywall/control/rate-limit bypass. BSE/publisher licences require separate verification.",
+      "legal_review_needed": true,
+      "verification_status": "NSE official terms and Copyright Act retrieved. No licence grant established; attribution alone is insufficient. BSE terms not verified."
+    },
+    {
+      "id": "DPDP-COMMENCEMENT",
+      "area": "Privacy / phase tracking",
+      "rule": "DPDP has staggered commencement; core fiduciary obligations are not all in force on the review date.",
+      "jurisdiction": "India",
+      "entities": "Operators processing covered digital personal data; exemptions require separate analysis",
+      "transaction_type": "User accounts, uploads, analytics and logs",
+      "provision": "DPDP Act 2023 section 1(2); G.S.R. 843(E); DPDP Rules 2025 rule 1; G.S.R. 846(E) and corrigendum 892(E)",
+      "effective_date": "Published 2025-11-13; institutional provisions immediate; consent-manager phase after one year; main duties after eighteen months (scheduled November 2026/May 2027)",
+      "evidence_urls": [
+        "https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf",
+        "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+        "https://www.meity.gov.in/static/uploads/2025/12/3c7ebbae0e5456f493f486e6845df86b.pdf"
+      ],
+      "required_action": "Maintain phased obligations rather than a single 'DPDP compliant' flag. Confirm publication-date computation and later notifications before launch. Do not confuse January 2025 draft rules with final rules.",
+      "legal_review_needed": true,
+      "verification_status": "Final Gazette and December corrigendum verified. As of 2026-10-16 later phases are scheduled, not deemed commenced."
+    },
+    {
+      "id": "DPDP-READINESS",
+      "area": "Privacy / future duties",
+      "rule": "Plan for notices, security, retention/deletion and breach communications under the final rules.",
+      "jurisdiction": "India",
+      "entities": "Covered data fiduciaries/processors when substantive provisions commence",
+      "transaction_type": "Uploads and account/log processing",
+      "provision": "DPDP Act sections 3–8, 11–14; Rules 3, 6–9; rule 7 notification and rule 8(3) retention",
+      "effective_date": "Scheduled eighteen months after 2025-11-13 publication; not treated as operative on 2026-10-16",
+      "evidence_urls": [
+        "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf"
+      ],
+      "required_action": "Minimise personal data, document purpose and deletion, control access and processor contracts. Future breach plan must distinguish notice without delay from detailed Board follow-up within 72 hours; reconcile rule 8(3)'s minimum retention with deletion and other legal holds.",
+      "legal_review_needed": true,
+      "verification_status": "Final rule text verified; applicability and exemptions require counsel. Proposed product controls are design requirements, not claims of implemented compliance."
+    },
+    {
+      "id": "SPDI-CURRENT",
+      "area": "Privacy / current bridge",
+      "rule": "Existing IT Act/SPDI duties may apply before DPDP's substantive phase; uploads can contain sensitive financial or identity data.",
+      "jurisdiction": "India",
+      "entities": "Covered body corporates/persons in India handling sensitive personal data",
+      "transaction_type": "Collection, storage, transfer and disclosure of sensitive personal data",
+      "provision": "IT Act section 43A; SPDI Rules 2011 rules 3–8; 2011 official clarification; DPDP Act section 44(2) commencement",
+      "effective_date": "SPDI 2011 publication; section 43A omission scheduled with DPDP eighteen-month phase",
+      "evidence_urls": [
+        "https://emb.mes.gov.in/Common/help/gsr3_10511.pdf",
+        "https://www.pib.gov.in/newsite/erelcontent.aspx?lang=2&reg=48&relid=74990",
+        "https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf"
+      ],
+      "required_action": "Publish a privacy policy; collect only needed data with applicable consent, security and transfer safeguards. Separate user document deletion from legally required security-log retention. Evaluate direct-customer versus processor roles.",
+      "legal_review_needed": true,
+      "verification_status": "Official rule text/clarification and DPDP commencement retrieved; precise role/application and any later amendments require legal review."
+    },
+    {
+      "id": "CERT-IN",
+      "area": "Cyber-incident obligations",
+      "rule": "Covered entities must report specified incidents within six hours and retain ICT logs securely in India for 180 days.",
+      "jurisdiction": "India",
+      "entities": "Service providers, intermediaries, data centres, body corporates and government organisations within scope",
+      "transaction_type": "Operating the application or hosting uploaded documents",
+      "provision": "IT Act section 70B(6); CERT-In Directions 20(3)/2022 of 2022-04-28, clauses (i)–(iv) and Annexure I; official FAQ",
+      "effective_date": "Direction states sixty days from issue; general compliance operational date June 2022; specific extensions require role check",
+      "evidence_urls": [
+        "https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf",
+        "https://www.cert-in.org.in/PDF/FAQs_on_CyberSecurityDirections_May2022.pdf"
+      ],
+      "required_action": "Name an incident contact; synchronise clocks; preserve access/security logs for rolling 180 days within India where applicable; triage and report covered incidents within six hours of noticing/notification. Do not wait for a completed forensic investigation. Restrict access and omit document bodies/secrets from logs.",
+      "legal_review_needed": true,
+      "verification_status": "Directions and FAQ verified. Five-year subscriber-record duty is for specified provider classes, not automatically every dashboard."
+    },
+    {
+      "id": "SEBI-RA",
+      "area": "Report publication / sale",
+      "rule": "Company-specific analysis for consideration may be research services; a disclaimer or lack of a price target does not decide the classification.",
+      "jurisdiction": "India",
+      "entities": "Publisher/seller of securities-related reports; tool operator depending on service and monetisation",
+      "transaction_type": "Publishing, subscriptions, paid reports, indirect consideration",
+      "provision": "SEBI RA Regulations 2014 regulations 2(1)(fa), 2(1)(u), 2(1)(w)/(wa), 3; Master Circular 2026 paragraph 1.8 and FAQ 4/8",
+      "effective_date": "RA consolidated regulations last amended 2025-11-25; master circular 2026-02-06",
+      "evidence_urls": [
+        "https://www.sebi.gov.in/legal/regulations/nov-2025/securities-and-exchange-board-of-india-research-analysts-regulations-2014-last-amended-on-november-25-2025-_98248.html",
+        "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375507051.pdf"
+      ],
+      "required_action": "Before public launch or monetisation, obtain RA classification/registration advice for actual report wording, distribution, incentives and business model. Factual statistical-summary exclusion cannot simply be asserted for interpretive issuer verdicts. No buy/sell/hold or price targets.",
+      "legal_review_needed": true,
+      "verification_status": "Current SEBI index and official master circular verified. Product is not legally cleared; later consultation proposals are not treated as enacted exemptions."
+    },
+    {
+      "id": "SEBI-IA",
+      "area": "Personalised advice",
+      "rule": "Personalised securities advice for consideration can trigger a separate investment-adviser regime.",
+      "jurisdiction": "India",
+      "entities": "Operator offering individual recommendations, portfolios or suitability advice",
+      "transaction_type": "Personalised investment advice",
+      "provision": "SEBI IA Regulations 2013 regulations 2(1)(l), 2(1)(m), 3 and applicable exemptions",
+      "effective_date": "Consolidated regulations last amended 2025-11-25; current index verified 2026-10-16",
+      "evidence_urls": [
+        "https://www.sebi.gov.in/legal/regulations/nov-2025/securities-and-exchange-board-of-india-investment-advisers-regulations-2013-and-securities-last-amended-on-november-25-2025-_98246.html",
+        "https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&smid=0+&ssid=3"
+      ],
+      "required_action": "Keep report analysis non-personalised. Do not add portfolio suitability or trade recommendations without IA legal review/registration assessment; disclose factual/estimate/interpretation boundaries.",
+      "legal_review_needed": true,
+      "verification_status": "Official consolidated landing page verified; no determination that the product falls outside IA/RA regulation."
+    }
+  ],
+  "limitations": [
+    "Official sources were retrieved on 2026-10-16. Website update labels are evidence of the retrieved version, not proof that every intervening Gazette, court decision or transaction-specific approval was checked.",
+    "BoB 2019 legal identity/effective date is verified from its Gazette. Full transaction approval, tax and regulatory-relief files have not been independently audited.",
+    "CCI's retrieved official pages retain small-target thresholds but identify a two-year March 2024 notification; an operative renewal after March 2026 was not verified. Treat current exemption as unresolved.",
+    "RBI 2025 entity-specific directions replace relying on the prompt's older starting points. Some current prudential landing pages expose titles but not full amended text; those rows explicitly remain partial.",
+    "SEBI consolidated index shows LODR July 14 2026 and RA/IA November 25 2025 versions; later individual circulars and stock-exchange SOPs were not exhaustively reconciled.",
+    "Data licences, BSE terms, publisher permissions, source redistribution rights, public-launch privacy implementation and RA/IA classification require qualified review. This demo does not confer any licence or registration.",
+    "Legal-review flags are about unresolved application. A false flag on the narrow historical scheme classification is not a statement that the merger or product is legally cleared."
+  ]
+}

@@ -1,0 +1,3236 @@
+{
+  "schemaVersion": 1,
+  "id": "bob-vijaya-dena-2019",
+  "name": "Bank of Baroda + Vijaya Bank + Dena Bank",
+  "kind": "public_sector_bank_statutory_amalgamation",
+  "asOf": "2026-10-16",
+  "analysisWindow": {
+    "prePeriod": "2019-03-31",
+    "postPeriod": "2020-03-31",
+    "postQuarterCount": 4,
+    "scope": "Historical first-year case only; not an assessment of current2026 bank condition"
+  },
+  "event": {
+    "announcementDate": "2018-09-17",
+    "approvalDate": "2019-01-02",
+    "effectiveDate": "2019-04-01",
+    "recordDate": "2019-03-11",
+    "firstCombinedPeriod": "2019-06-30",
+    "firstCombinedReportingDate": "2019-07-25",
+    "sourceIds": [
+      "announcement",
+      "scheme",
+      "bob-q1-20"
+    ],
+    "transactionBoundary": "Entire undertakings vest in continuing Bank of Baroda under statutory scheme; not a loan-book purchase, NBFC acquisition, demerger or capital raise.",
+    "entities": [
+      {
+        "id": "bob",
+        "name": "Bank of Baroda",
+        "role": "continuing_transferee",
+        "identifiers": {
+          "nse": "BANKBARODA",
+          "bse": "532134"
+        },
+        "identifierSourceId": "scheme"
+      },
+      {
+        "id": "vijaya",
+        "name": "Vijaya Bank",
+        "role": "transferor_ceased_separate_bank",
+        "identifiers": {
+          "bse": "532401"
+        },
+        "identifierStatus": "Historical BSE code verified from indexed exchange notice; NSE ticker and ISIN remain unverified.",
+        "swap": {
+          "newBobShares": 402,
+          "oldShares": 1000,
+          "newFaceValueINR": 2,
+          "oldFaceValueINR": 10
+        },
+        "sourceId": "scheme",
+        "identifierSourceId": "bse-predecessor-identifiers"
+      },
+      {
+        "id": "dena",
+        "name": "Dena Bank",
+        "role": "transferor_ceased_separate_bank",
+        "identifiers": {
+          "bse": "532121"
+        },
+        "identifierStatus": "Historical BSE code verified from indexed exchange notice; NSE ticker and ISIN remain unverified.",
+        "swap": {
+          "newBobShares": 110,
+          "oldShares": 1000,
+          "newFaceValueINR": 2,
+          "oldFaceValueINR": 10
+        },
+        "sourceId": "scheme",
+        "identifierSourceId": "bse-predecessor-identifiers"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "scheme",
+      "title": "Government scheme and issuer record-date notice",
+      "url": "https://bankofbaroda.bank.in/writereaddata/Images/pdf/BOB-Amalgamation.pdf",
+      "publishedDate": "2019-02-20",
+      "publicationDateStatus": "verified",
+      "locator": "PDF p1 issuer notice; pp8–14 English Gazette dated 2019-01-02, clauses 1–4 and 6",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official PDF text extraction; arithmetic and period checks",
+      "notes": "",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "announcement",
+      "title": "Government initiates consolidation",
+      "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=3&relid=183523",
+      "publishedDate": "2018-09-17",
+      "publicationDateStatus": "verified",
+      "locator": "Ministry of Finance announcement",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official HTML",
+      "notes": "",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bob-q1-20",
+      "title": "Bank of Baroda Q1 FY2020 performance analysis",
+      "url": "https://nsearchives.nseindia.com/corporate/BANKBARODA_25072019192649_Presentation_358.pdf",
+      "publishedDate": "2019-07-25",
+      "publicationDateStatus": "verified",
+      "locator": "pp2,6,12,42",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official PDF text extraction; arithmetic and period checks",
+      "notes": "Selected conflicting numbers are quarantined below. This is management presentation data, not a separate audit opinion on pro-forma numbers.",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bob-q2-20",
+      "title": "Bank of Baroda Q2 FY2020 performance analysis",
+      "url": "https://nsearchives.nseindia.com/corporate/BANKBARODA_08112019180404_BOBAnalystPresentationQ2FY20Final_049.pdf",
+      "publishedDate": "2019-11-08",
+      "publicationDateStatus": "Verified PDF cover date, corroborated by exchange filing timestamp",
+      "locator": "p40 Provision Coverage Ratio",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official PDF text extraction; arithmetic and period checks",
+      "notes": "Issuer-hosted filename contained Nov 11; the actual presentation cover states Nov 8, 2019.",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bob-q4-20",
+      "title": "Bank of Baroda Q4 FY2020 performance analysis",
+      "url": "https://nsearchives.nseindia.com/corporate/BANKBARODA_24062020105424_BOBAnalystPresentationQ4FY20.pdf",
+      "publishedDate": "2020-06-24",
+      "publicationDateStatus": "Exchange filing date from official timestamped archive; stale Q3 cover date is disregarded",
+      "locator": "pp2,5,8,10,28–35,42,45–46",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official PDF text extraction; arithmetic and period checks",
+      "notes": "Q4 FY2020 document filed June 24, 2020; cover retains a stale Q3 label/date. FY2020 columns and March 2020 periods are explicit. Historical aggregation is unadjusted. See source reconciliation notes.",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bob-results-20",
+      "title": "Bank of Baroda audited standalone results FY2020",
+      "url": "https://bankofbaroda.bank.in/shareholders-corner/financial-reports/financial-report-2019-20",
+      "publishedDate": "2020-06-23",
+      "publicationDateStatus": "Results announcement date verified by issuer press release filed on NSE",
+      "locator": "SEBI Standalone, Audited results year/quarter ended 31 March2020; Statement of Assets & Liabilities",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription from issuer HTML table; INR lakh divided by100 to crore",
+      "notes": "March2019 comparative is acquirer alone. June/September2019 standalone quarterly tables are also on this page. Exact audited statement values preferred over presentation rounding. Publication corroborated by source bob-results-release-20.",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bob-divergence-20",
+      "title": "Bank of Baroda annual report FY2020: revised RBI divergence",
+      "url": "https://www.bseindia.com/bseplus/AnnualReport/532134/5321340320.pdf",
+      "publishedDate": null,
+      "publicationDateStatus": "not established; do not infer from crawl date",
+      "locator": "Table: Divergence in Asset Classification and Provisioning of NPAs, rows1–11 and note on RBI letter dated27Feb2020",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Indexed extraction of official exchange-hosted annual report; full PDF fetch failed",
+      "notes": "Stress scenario only. Latest disclosed GNPA divergence2048 replaces earlier5250. Table locator verified; page number unverified.",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bob-divergence-19",
+      "title": "Bank of Baroda Q3 FY2020 financial results",
+      "url": "https://links.sgx.com/1.0.0/corporate-announcements/52MIC78N61SZJHY4/594561_SGXFinal.pdf",
+      "publishedDate": null,
+      "publicationDateStatus": "not established; do not infer from crawl date",
+      "locator": "Standalone note20: divergence table",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Indexed official exchange PDF extraction",
+      "notes": "Historical version:5250 GNPA divergence, subsequently revised to2048. Do not use as current adjustment.",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "sbi-ar20",
+      "title": "SBI Annual Report FY2020: Stressed Assets Management",
+      "url": "https://sbi.bank.in/corporate/AR1920/download_center/english/11-3.16-Stressed%20Assets%20Management.pdf",
+      "publishedDate": null,
+      "publicationDateStatus": "not established; do not infer from crawl date",
+      "locator": "Printed p65, FY2017–FY2020 NPA table",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official PDF text extraction; arithmetic and period checks",
+      "notes": "",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "sbi-q4-19",
+      "title": "SBI analyst presentation FY2019",
+      "url": "https://sbi.bank.in/documents/17836/18638/100519-Analyst%2BPPT.pdf",
+      "publishedDate": "2019-05-10",
+      "publicationDateStatus": "inferred from issuer filename; not independently verified",
+      "locator": "Printed slide32 Asset Quality(1/3)",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official PDF text extraction; arithmetic and period checks",
+      "notes": "Publication day from issuer filename; financial period confirmed from contents.",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bom-q4-20",
+      "title": "Bank of Maharashtra FY2020 results press release",
+      "url": "https://bankofmaharashtra.bank.in/writereaddata/documentlibrary/02b22ec5-3d88-4136-81a8-c394bfa6d687.pdf",
+      "publishedDate": "2020-06-16",
+      "publicationDateStatus": "verified",
+      "locator": "pp1–3, asset quality and balance sheet",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Manual transcription of official PDF text extraction; arithmetic and period checks",
+      "notes": "",
+      "period": "Various historical periods; see each observation",
+      "units": "INR crore, percent or INR/share as recorded per observation"
+    },
+    {
+      "id": "bob-results-release-20",
+      "title": "Bank of Baroda FY2020 results announcement, filed on NSE",
+      "url": "https://archives.nseindia.com/corporate/BANKBARODA_23062020192301_FinalPressRelease.pdf",
+      "publishedDate": "2020-06-23",
+      "publicationDateStatus": "Verified dated issuer letter and results announcement",
+      "locator": "PDF p1 dated letter; p3 announcement and annual income statement",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Official PDF text checked against issuer HTML and rounded presentation",
+      "period": "Year ended 2020-03-31",
+      "units": "INR crore and percent"
+    },
+    {
+      "id": "bse-predecessor-identifiers",
+      "title": "BSE index notice on Vijaya and Dena amalgamation",
+      "url": "https://www.bseindia.com/downloads/SPDJ_ANN/MediaReleasePDF/882359_mediarelease-changestothes%26pbseindices-20190228.pdf",
+      "publishedDate": "2019-02-28",
+      "publicationDateStatus": "Dated official BSE release",
+      "locator": "Opening paragraph and constituent deletion rows",
+      "retrievedAt": "2026-10-16",
+      "extractionMethod": "Indexed official PDF text; direct retrieval returned 403",
+      "period": "Predecessor identifiers before amalgamation",
+      "units": "BSE security codes"
+    }
+  ],
+  "observations": [
+    {
+      "id": "bob:2019-03-31:net_advances",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "net_advances",
+      "value": 468819,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 Amalgamated Entity as on April1,2019; predecessor March31,2019 columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:deposits",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "deposits",
+      "value": 638690,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 Amalgamated Entity as on April1,2019; predecessor March31,2019 columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "vijaya:2019-03-31:net_advances",
+      "entity": "vijaya",
+      "period": "2019-03-31",
+      "metric": "net_advances",
+      "value": 130606,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 Amalgamated Entity as on April1,2019; predecessor March31,2019 columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "vijaya:2019-03-31:deposits",
+      "entity": "vijaya",
+      "period": "2019-03-31",
+      "metric": "deposits",
+      "value": 175817,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 Amalgamated Entity as on April1,2019; predecessor March31,2019 columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "dena:2019-03-31:net_advances",
+      "entity": "dena",
+      "period": "2019-03-31",
+      "metric": "net_advances",
+      "value": 51959,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 Amalgamated Entity as on April1,2019; predecessor March31,2019 columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "dena:2019-03-31:deposits",
+      "entity": "dena",
+      "period": "2019-03-31",
+      "metric": "deposits",
+      "value": 100652,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 Amalgamated Entity as on April1,2019; predecessor March31,2019 columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:gnpa_amount",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "gnpa_amount",
+      "value": 48232.77,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:net_npa_amount",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "net_npa_amount",
+      "value": 15609.5,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:gnpa_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "gnpa_ratio",
+      "value": 9.61,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:net_npa_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "net_npa_ratio",
+      "value": 3.33,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:capital_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "capital_ratio",
+      "value": 13.42,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:cet1_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "cet1_ratio",
+      "value": 10.38,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:roa",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "roa",
+      "value": 0.06,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:eps_basic",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "eps_basic",
+      "value": 1.64,
+      "unit": "INR/share",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:interest_income",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "interest_income",
+      "value": 49770.61,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "bob:2019-03-31:interest_expense",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "interest_expense",
+      "value": 31290.3,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "bob:2019-03-31:other_income",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "other_income",
+      "value": 6294.49,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "bob:2019-03-31:operating_expenses",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "operating_expenses",
+      "value": 11287.98,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "bob:2019-03-31:net_profit",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "net_profit",
+      "value": 433.52,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Audited standalone FY2019 comparative; analytical ratios and P&L",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "bob:2019-03-31:nim",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "nim",
+      "value": 2.72,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 annual predecessor ratios",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:cost_of_deposits",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "cost_of_deposits",
+      "value": 4.68,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 annual predecessor ratios",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:cost_income_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "cost_income_ratio",
+      "value": 45.56,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 annual predecessor ratios",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:domestic_casa_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "domestic_casa_ratio",
+      "value": 40.24,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 annual predecessor ratios",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:credit_cost",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "credit_cost",
+      "value": 2.43,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 annual predecessor ratios",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:slippage_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "slippage_ratio",
+      "value": 2.51,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 annual predecessor ratios",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bob:2019-03-31:pcr_including_two_ratio",
+      "entity": "bob",
+      "period": "2019-03-31",
+      "metric": "pcr_including_two_ratio",
+      "value": 78.68,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 annual predecessor ratios",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2018-06-30:gnpa_amount",
+      "entity": "combined",
+      "period": "2018-06-30",
+      "metric": "gnpa_amount",
+      "value": 79319,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p42 Provision Coverage Ratio, June2018",
+      "reportingPeriod": "2018-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2018-06-30:gross_advances",
+      "entity": "combined",
+      "period": "2018-06-30",
+      "metric": "gross_advances",
+      "value": 640592,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p42 Provision Coverage Ratio, June2018",
+      "reportingPeriod": "2018-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2018-06-30:gnpa_ratio",
+      "entity": "combined",
+      "period": "2018-06-30",
+      "metric": "gnpa_ratio",
+      "value": 12.38,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p42 Provision Coverage Ratio, June2018",
+      "reportingPeriod": "2018-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2018-09-30:gnpa_amount",
+      "entity": "combined",
+      "period": "2018-09-30",
+      "metric": "gnpa_amount",
+      "value": 78818,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, September2018",
+      "reportingPeriod": "2018-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2018-09-30:gross_advances",
+      "entity": "combined",
+      "period": "2018-09-30",
+      "metric": "gross_advances",
+      "value": 665208,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, September2018",
+      "reportingPeriod": "2018-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2018-09-30:gnpa_ratio",
+      "entity": "combined",
+      "period": "2018-09-30",
+      "metric": "gnpa_ratio",
+      "value": 11.85,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, September2018",
+      "reportingPeriod": "2018-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:gnpa_amount",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "gnpa_amount",
+      "value": 69924,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, March2019",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:gross_advances",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "gross_advances",
+      "value": 697824,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, March2019",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:gnpa_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "gnpa_ratio",
+      "value": 10.02,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, March2019",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-06-30:gnpa_amount",
+      "entity": "combined",
+      "period": "2019-06-30",
+      "metric": "gnpa_amount",
+      "value": 69714,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, June2019 comparative",
+      "reportingPeriod": "2019-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-06-30:gross_advances",
+      "entity": "combined",
+      "period": "2019-06-30",
+      "metric": "gross_advances",
+      "value": 678142,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, June2019 comparative",
+      "reportingPeriod": "2019-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-06-30:gnpa_ratio",
+      "entity": "combined",
+      "period": "2019-06-30",
+      "metric": "gnpa_ratio",
+      "value": 10.28,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, June2019 comparative",
+      "reportingPeriod": "2019-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-09-30:gnpa_amount",
+      "entity": "combined",
+      "period": "2019-09-30",
+      "metric": "gnpa_amount",
+      "value": 69969,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, September2019",
+      "reportingPeriod": "2019-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-09-30:gross_advances",
+      "entity": "combined",
+      "period": "2019-09-30",
+      "metric": "gross_advances",
+      "value": 682669,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, September2019",
+      "reportingPeriod": "2019-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-09-30:gnpa_ratio",
+      "entity": "combined",
+      "period": "2019-09-30",
+      "metric": "gnpa_ratio",
+      "value": 10.25,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "p40 Provision Coverage Ratio, September2019",
+      "reportingPeriod": "2019-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-12-31:gnpa_amount",
+      "entity": "combined",
+      "period": "2019-12-31",
+      "metric": "gnpa_amount",
+      "value": 73140,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, December2019",
+      "reportingPeriod": "2019-12-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-12-31:gross_advances",
+      "entity": "combined",
+      "period": "2019-12-31",
+      "metric": "gross_advances",
+      "value": 701266,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, December2019",
+      "reportingPeriod": "2019-12-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-12-31:gnpa_ratio",
+      "entity": "combined",
+      "period": "2019-12-31",
+      "metric": "gnpa_ratio",
+      "value": 10.43,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, December2019",
+      "reportingPeriod": "2019-12-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:gnpa_amount",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "gnpa_amount",
+      "value": 69381,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, March2020",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:gross_advances",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "gross_advances",
+      "value": 738096,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, March2020",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:gnpa_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "gnpa_ratio",
+      "value": 9.4,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p35 Provision Coverage Ratio, March2020",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:net_npa_amount",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "net_npa_amount",
+      "value": 23794,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:net_advances",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "net_advances",
+      "value": 651384,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:deposits",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "deposits",
+      "value": 915159,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:casa_deposits",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "casa_deposits",
+      "value": 311368,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:net_npa_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "net_npa_ratio",
+      "value": 3.65,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:casa_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "casa_ratio",
+      "value": 34.02,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:pcr_including_two_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "pcr_including_two_ratio",
+      "value": 77.72,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:pcr_excluding_two_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "pcr_excluding_two_ratio",
+      "value": 65.97,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,35 March2019 combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:net_interest_income",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "net_interest_income",
+      "value": 25678,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "combined:2019-03-31:other_income",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "other_income",
+      "value": 8794,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "combined:2019-03-31:operating_expenses",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "operating_expenses",
+      "value": 17928,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "combined:2019-03-31:cost_income_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "cost_income_ratio",
+      "value": 52.01,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:credit_cost",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "credit_cost",
+      "value": 3.27,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:slippage_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "slippage_ratio",
+      "value": 4.34,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:cost_of_deposits",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "cost_of_deposits",
+      "value": 4.97,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:net_profit",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "net_profit",
+      "value": -8340,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp10,29–32,34 FY2019 annual combined columns",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2018-04-01"
+    },
+    {
+      "id": "combined:2019-04-01:capital_ratio",
+      "entity": "combined",
+      "period": "2019-04-01",
+      "metric": "capital_ratio",
+      "value": 11.77,
+      "unit": "percent",
+      "basis": "opening_amalgamated_bank",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 opening amalgamated entity ratios",
+      "reportingPeriod": "2019-04-01",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-04-01:cet1_ratio",
+      "entity": "combined",
+      "period": "2019-04-01",
+      "metric": "cet1_ratio",
+      "value": 8.63,
+      "unit": "percent",
+      "basis": "opening_amalgamated_bank",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "p6 opening amalgamated entity ratios",
+      "reportingPeriod": "2019-04-01",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:net_npa_amount",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "net_npa_amount",
+      "value": 21576.59,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:net_advances",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "net_advances",
+      "value": 690120.73,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:deposits",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "deposits",
+      "value": 945984.43,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:interest_income",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "interest_income",
+      "value": 75983.65,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2019-04-01"
+    },
+    {
+      "id": "combined:2020-03-31:interest_expense",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "interest_expense",
+      "value": 48532.37,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2019-04-01"
+    },
+    {
+      "id": "combined:2020-03-31:other_income",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "other_income",
+      "value": 10317.33,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2019-04-01"
+    },
+    {
+      "id": "combined:2020-03-31:operating_expenses",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "operating_expenses",
+      "value": 18077.19,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2019-04-01"
+    },
+    {
+      "id": "combined:2020-03-31:net_profit",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "net_profit",
+      "value": 546.18,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2019-04-01"
+    },
+    {
+      "id": "combined:2020-03-31:profit_before_tax",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "profit_before_tax",
+      "value": -1802.11,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2019-04-01"
+    },
+    {
+      "id": "combined:2020-03-31:tax_expense",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "tax_expense",
+      "value": -2348.29,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation.",
+      "period_start": "2019-04-01"
+    },
+    {
+      "id": "combined:2020-03-31:capital_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "capital_ratio",
+      "value": 13.3,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:cet1_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "cet1_ratio",
+      "value": 9.44,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:eps_basic",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "eps_basic",
+      "value": 1.36,
+      "unit": "INR/share",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:roa",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "roa",
+      "value": 0.06,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:net_npa_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "net_npa_ratio",
+      "value": 3.13,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "FY2020 audited standalone year column; assets and liabilities",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:casa_deposits",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "casa_deposits",
+      "value": 333825,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:casa_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "casa_ratio",
+      "value": 35.29,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:pcr_including_two_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "pcr_including_two_ratio",
+      "value": 81.33,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:pcr_excluding_two_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "pcr_excluding_two_ratio",
+      "value": 68.9,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:cost_income_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "cost_income_ratio",
+      "value": 47.86,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:credit_cost",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "credit_cost",
+      "value": 2.35,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:slippage_ratio",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "slippage_ratio",
+      "value": 2.97,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:cost_of_deposits",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "cost_of_deposits",
+      "value": 4.98,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "pp8,10,29,34–35 FY2020 annual/terminal columns",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2020-03-31:gnpa_amount_audited",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "gnpa_amount_audited",
+      "value": 69381.43,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-results-20",
+      "locator": "Analytical ratios, GNPA amount FY2020; original6938143 INR lakh",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:gnpa_rbi_assessed",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "gnpa_rbi_assessed",
+      "value": 71972,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-divergence-20",
+      "locator": "Divergence table row2",
+      "reportingPeriod": "2019-03-31",
+      "reviewStatus": "indexed_only_stress_scenario",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:gnpa_divergence",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "gnpa_divergence",
+      "value": 2048,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-divergence-20",
+      "locator": "Divergence table row3",
+      "reportingPeriod": "2019-03-31",
+      "reviewStatus": "indexed_only_stress_scenario",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:gnpa_rbi_assessed_superseded",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "gnpa_rbi_assessed_superseded",
+      "value": 75174,
+      "unit": "INR crore",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-divergence-19",
+      "locator": "Note20 row2",
+      "reportingPeriod": "2019-03-31",
+      "reviewStatus": "superseded_not_for_default_calculation",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-06-30:net_npa_amount",
+      "entity": "combined",
+      "period": "2019-06-30",
+      "metric": "net_npa_amount",
+      "value": 25030,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "Provision Coverage Ratio table",
+      "reportingPeriod": "2019-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-06-30:net_advances",
+      "entity": "combined",
+      "period": "2019-06-30",
+      "metric": "net_advances",
+      "value": 633181,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q1-20",
+      "locator": "Business Performance table, terminal figures",
+      "reportingPeriod": "2019-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-09-30:net_npa_amount",
+      "entity": "combined",
+      "period": "2019-09-30",
+      "metric": "net_npa_amount",
+      "value": 24894,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q2-20",
+      "locator": "Provision Coverage Ratio table",
+      "reportingPeriod": "2019-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-12-31:net_npa_amount",
+      "entity": "combined",
+      "period": "2019-12-31",
+      "metric": "net_npa_amount",
+      "value": 26504,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "Provision Coverage Ratio table",
+      "reportingPeriod": "2019-12-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-12-31:net_advances",
+      "entity": "combined",
+      "period": "2019-12-31",
+      "metric": "net_advances",
+      "value": 654465,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "Business Performance table, terminal figures",
+      "reportingPeriod": "2019-12-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2018-03-31:gnpa_ratio",
+      "entity": "sbi",
+      "period": "2018-03-31",
+      "metric": "gnpa_ratio",
+      "value": 10.91,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-q4-19",
+      "locator": "p32 Asset Quality(1/3)",
+      "reportingPeriod": "2018-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2018-06-30:gnpa_ratio",
+      "entity": "sbi",
+      "period": "2018-06-30",
+      "metric": "gnpa_ratio",
+      "value": 10.69,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-q4-19",
+      "locator": "p32 Asset Quality(1/3)",
+      "reportingPeriod": "2018-06-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2018-09-30:gnpa_ratio",
+      "entity": "sbi",
+      "period": "2018-09-30",
+      "metric": "gnpa_ratio",
+      "value": 9.95,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-q4-19",
+      "locator": "p32 Asset Quality(1/3)",
+      "reportingPeriod": "2018-09-30",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2018-12-31:gnpa_ratio",
+      "entity": "sbi",
+      "period": "2018-12-31",
+      "metric": "gnpa_ratio",
+      "value": 8.71,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-q4-19",
+      "locator": "p32 Asset Quality(1/3)",
+      "reportingPeriod": "2018-12-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2019-03-31:gnpa_ratio",
+      "entity": "sbi",
+      "period": "2019-03-31",
+      "metric": "gnpa_ratio",
+      "value": 7.53,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-q4-19",
+      "locator": "p32 Asset Quality(1/3)",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2020-03-31:gnpa_ratio",
+      "entity": "sbi",
+      "period": "2020-03-31",
+      "metric": "gnpa_ratio",
+      "value": 6.15,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-ar20",
+      "locator": "printed p65 FY2020 column",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2020-03-31:net_npa_ratio",
+      "entity": "sbi",
+      "period": "2020-03-31",
+      "metric": "net_npa_ratio",
+      "value": 2.23,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-ar20",
+      "locator": "printed p65 FY2020 column",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2020-03-31:gnpa_amount",
+      "entity": "sbi",
+      "period": "2020-03-31",
+      "metric": "gnpa_amount",
+      "value": 149092,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-ar20",
+      "locator": "printed p65 FY2020 column",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "sbi:2019-03-31:net_npa_ratio",
+      "entity": "sbi",
+      "period": "2019-03-31",
+      "metric": "net_npa_ratio",
+      "value": 3.01,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "sbi-ar20",
+      "locator": "p65 FY2019 column",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bom:2019-03-31:gnpa_ratio",
+      "entity": "bom",
+      "period": "2019-03-31",
+      "metric": "gnpa_ratio",
+      "value": 16.4,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bom-q4-20",
+      "locator": "p3 Asset Quality",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bom:2019-03-31:net_npa_ratio",
+      "entity": "bom",
+      "period": "2019-03-31",
+      "metric": "net_npa_ratio",
+      "value": 5.52,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bom-q4-20",
+      "locator": "p3 Asset Quality",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bom:2019-03-31:gnpa_amount",
+      "entity": "bom",
+      "period": "2019-03-31",
+      "metric": "gnpa_amount",
+      "value": 15324,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bom-q4-20",
+      "locator": "p3 Asset Quality",
+      "reportingPeriod": "2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bom:2020-03-31:gnpa_ratio",
+      "entity": "bom",
+      "period": "2020-03-31",
+      "metric": "gnpa_ratio",
+      "value": 12.81,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bom-q4-20",
+      "locator": "p3 Asset Quality",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bom:2020-03-31:net_npa_ratio",
+      "entity": "bom",
+      "period": "2020-03-31",
+      "metric": "net_npa_ratio",
+      "value": 4.77,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bom-q4-20",
+      "locator": "p3 Asset Quality",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "bom:2020-03-31:gnpa_amount",
+      "entity": "bom",
+      "period": "2020-03-31",
+      "metric": "gnpa_amount",
+      "value": 12152,
+      "unit": "INR crore",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bom-q4-20",
+      "locator": "p3 Asset Quality",
+      "reportingPeriod": "2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Primary-source transcription and arithmetic checks; this does not resolve comparability or prove causation."
+    },
+    {
+      "id": "combined:2019-03-31:nim",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "metric": "nim",
+      "value": 2.64,
+      "unit": "percent",
+      "basis": "issuer_aggregated_predecessors",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p28 Net Interest Margin, yearly chart, Global series (not quarterly chart)",
+      "reportingPeriod": "Full fiscal year ended 2019-03-31",
+      "reviewed": true,
+      "reviewScope": "Annual/global series checked against primary PDF text; average earning assets not available for reconstruction."
+    },
+    {
+      "id": "combined:2020-03-31:nim",
+      "entity": "combined",
+      "period": "2020-03-31",
+      "metric": "nim",
+      "value": 2.73,
+      "unit": "percent",
+      "basis": "standalone_global",
+      "status": "reported",
+      "sourceId": "bob-q4-20",
+      "locator": "p28 Net Interest Margin, yearly chart, Global series (not quarterly chart)",
+      "reportingPeriod": "Full fiscal year ended 2020-03-31",
+      "reviewed": true,
+      "reviewScope": "Annual/global series checked against primary PDF text; average earning assets not available for reconstruction."
+    }
+  ],
+  "metricDefinitions": {
+    "gnpa_ratio": {
+      "label": "Gross NPA",
+      "numeratorMetric": "gnpa_amount",
+      "denominatorMetric": "gross_advances",
+      "direction": "lower",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Gross non-performing advances divided by gross advances at the same date; includes global standalone operations."
+    },
+    "net_npa_ratio": {
+      "label": "Net NPA",
+      "numeratorMetric": "net_npa_amount",
+      "denominatorMetric": "net_advances",
+      "direction": "lower",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Net non-performing advances divided by reported net advances at date. Eligible regulatory deductions can differ from balance-sheet net advances; reconciliation to reported ratio is required."
+    },
+    "cost_income_ratio": {
+      "label": "Cost / income",
+      "numeratorMetric": "operating_expenses",
+      "denominatorMetric": "operating_income",
+      "direction": "lower",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Annual operating expenses / (net interest income + other income); provisions and taxes excluded."
+    },
+    "casa_ratio": {
+      "label": "Global CASA",
+      "numeratorMetric": "casa_deposits",
+      "denominatorMetric": "deposits",
+      "direction": "higher",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Closing global current and savings deposits / closing global deposits. Do not substitute domestic CASA."
+    },
+    "nim": {
+      "label": "Net interest margin",
+      "numeratorMetric": "net_interest_income",
+      "denominatorMetric": "average_interest_earning_assets",
+      "direction": "higher",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Annual NII / average interest-earning assets. Quarterly values require annualization and consistent average asset basis."
+    },
+    "roa": {
+      "label": "Return on assets",
+      "numeratorMetric": "net_profit",
+      "denominatorMetric": "average_assets",
+      "direction": "higher",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Annual PAT / average assets; reported ratios retained, not rebuilt from closing assets."
+    },
+    "roe": {
+      "label": "Return on equity",
+      "numeratorMetric": "net_profit",
+      "denominatorMetric": "average_equity",
+      "direction": "higher",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Annual attributable earnings / average ordinary equity; equivalent shareholder perimeter required."
+    },
+    "credit_cost": {
+      "label": "Credit cost",
+      "numeratorMetric": "credit_provisions",
+      "denominatorMetric": "average_gross_advances",
+      "direction": "lower",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Issuer reported annual credit-cost ratio; provision scope and averaging require verification before reconstruction."
+    },
+    "slippage_ratio": {
+      "label": "Slippages",
+      "numeratorMetric": "fresh_slippages",
+      "denominatorMetric": "opening_standard_advances",
+      "direction": "lower",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Issuer reported annual ratio; do not confuse fresh slippages with all NPA additions."
+    },
+    "pcr_including_two_ratio": {
+      "label": "Provision coverage incl. technical write-offs",
+      "numeratorMetric": "coverage_provisions_including_two",
+      "denominatorMetric": "gnpa_including_two",
+      "direction": "higher",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Issuer PCR including technical write-offs; distinct from on-balance-sheet provisions/GNPA."
+    },
+    "cost_of_deposits": {
+      "label": "Cost of deposits",
+      "numeratorMetric": "deposit_interest_expense",
+      "denominatorMetric": "average_deposits",
+      "direction": "lower",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Annual deposit interest expense / average deposits; this is not full cost of funds."
+    },
+    "cost_of_funds": {
+      "label": "Cost of funds",
+      "numeratorMetric": "interest_expense",
+      "denominatorMetric": "average_interest_bearing_funding",
+      "direction": "lower",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Interest cost / consistent average interest-bearing funding including borrowing; unavailable."
+    },
+    "capital_ratio": {
+      "label": "Basel III capital",
+      "numeratorMetric": "eligible_regulatory_capital",
+      "denominatorMetric": "risk_weighted_assets",
+      "direction": "higher",
+      "unit": "percent",
+      "annualization": 1,
+      "definition": "Regulatory capital / risk-weighted assets. Neither simple ratio averaging nor ordinary equity/total assets is valid."
+    },
+    "eps_basic": {
+      "label": "Basic EPS",
+      "numeratorMetric": "attributable_profit",
+      "denominatorMetric": "weighted_average_shares",
+      "direction": "higher",
+      "unit": "INR/share",
+      "annualization": 1,
+      "definition": "Attributable annual earnings / weighted-average ordinary shares; merger swap and capital issuance prevent direct historical aggregation."
+    },
+    "book_value_per_share": {
+      "label": "Book value / share",
+      "numeratorMetric": "ordinary_equity",
+      "denominatorMetric": "ending_ordinary_shares",
+      "direction": "higher",
+      "unit": "INR/share",
+      "annualization": 1,
+      "definition": "Consistent ordinary book equity / actual ending shares; do not mix share application money or revaluation conventions."
+    }
+  },
+  "coverage": [
+    {
+      "metric": "gnpa_ratio",
+      "status": "amount_comparison_supported",
+      "verdict": "Too early to tell",
+      "reason": "Underlying issuer-aggregated baseline and post amounts available; full predecessor reconciliation, causal adjustments and persistence remain insufficient."
+    },
+    {
+      "metric": "net_npa_ratio",
+      "status": "amount_comparison_supported",
+      "verdict": "Too early to tell",
+      "reason": "Underlying issuer-aggregated baseline and post amounts available; full predecessor reconciliation, causal adjustments and persistence remain insufficient."
+    },
+    {
+      "metric": "cost_income_ratio",
+      "status": "amount_comparison_supported",
+      "verdict": "Too early to tell",
+      "reason": "Underlying issuer-aggregated baseline and post amounts available; full predecessor reconciliation, causal adjustments and persistence remain insufficient."
+    },
+    {
+      "metric": "casa_ratio",
+      "status": "amount_comparison_supported",
+      "verdict": "Too early to tell",
+      "reason": "Underlying issuer-aggregated baseline and post amounts available; full predecessor reconciliation, causal adjustments and persistence remain insufficient."
+    },
+    {
+      "metric": "nim",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "roa",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "roe",
+      "status": "unsupported",
+      "verdict": "Too early to tell",
+      "reason": "No verified comparable numerator/denominator series; no numbers fabricated."
+    },
+    {
+      "metric": "credit_cost",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "slippage_ratio",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "pcr_including_two_ratio",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "cost_of_deposits",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "cost_of_funds",
+      "status": "unsupported",
+      "verdict": "Too early to tell",
+      "reason": "No verified comparable numerator/denominator series; no numbers fabricated."
+    },
+    {
+      "metric": "capital_ratio",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "eps_basic",
+      "status": "reported_only",
+      "verdict": "Too early to tell",
+      "reason": "Selected reported figures retained; not enough consistent underlying amounts to reconstruct or attribute the change."
+    },
+    {
+      "metric": "book_value_per_share",
+      "status": "unsupported",
+      "verdict": "Too early to tell",
+      "reason": "No verified comparable numerator/denominator series; no numbers fabricated."
+    }
+  ],
+  "reconstruction": {
+    "mode": "issuer_aggregated_amounts",
+    "baselineEntity": "combined",
+    "acquirerEntity": "bob",
+    "prePeriod": "2019-03-31",
+    "postEntity": "combined",
+    "postPeriod": "2020-03-31",
+    "metrics": [
+      "gnpa_ratio",
+      "net_npa_ratio",
+      "cost_income_ratio",
+      "casa_ratio"
+    ],
+    "predecessorEntities": [
+      "bob",
+      "vijaya",
+      "dena"
+    ],
+    "verifiedSummations": [
+      {
+        "metric": "net_advances",
+        "amounts": [
+          468819,
+          130606,
+          51959
+        ],
+        "sum": 651384,
+        "sourceId": "bob-q1-20"
+      },
+      {
+        "metric": "deposits",
+        "amounts": [
+          638690,
+          175817,
+          100652
+        ],
+        "sum": 915159,
+        "sourceId": "bob-q1-20"
+      }
+    ],
+    "adjustments": [],
+    "unresolved": [
+      "Individual predecessor FY2019 GNPA and gross advances not independently extracted; the aggregate amount baseline is issuer-provided, not a fully independently reconstructed series.",
+      "Issuer says historical combination is aggregation of audited figures without adjustments. Interbank balances, cross-holdings and intercompany income eliminations are unverified, not assumed zero.",
+      "June2019 gross advances changed from678322 in Q1 to678142 in Q2 comparative; later comparable used, original retained below.",
+      "Combined premerger cost/income is52.01% in Q4FY20 versus53.19% in Q1FY20; basis bridge not disclosed. Latest underlying amounts used, no claim adjustment quantified.",
+      "Net NPA amount differs by₹1crore between presentation23794 and annual divergence23795; rounding/source definition remains.",
+      "Quarterly NPA reduction categories in p34 FY20 do not sum consistently to annual categories; do not build an amount-flow waterfall from those subcategories."
+    ]
+  },
+  "peers": [
+    {
+      "id": "sbi",
+      "name": "State Bank of India",
+      "selected": true,
+      "reason": "Listed public-sector commercial bank with global balance sheet; no new whole-bank amalgamation in FY2020.",
+      "limitations": "Much larger;2017 associate-bank merger may still affect integration and cleanup. Different loan mix and recoveries. Three matching pre dates available; pre-trends are not parallel."
+    },
+    {
+      "id": "bom",
+      "name": "Bank of Maharashtra",
+      "selected": true,
+      "reason": "Listed public-sector commercial bank without a merger during analysis window.",
+      "limitations": "Smaller and predominantly domestic; starting NPA substantially higher; only one matching pre point in included evidence, so pre-trend fit unavailable."
+    }
+  ],
+  "peerMethod": {
+    "method": "median_of_individual_changes",
+    "metric": "gnpa_ratio",
+    "prePeriod": "2019-03-31",
+    "postPeriod": "2020-03-31",
+    "selectionFixedBeforeCalculation": true,
+    "syntheticControl": "not_supported",
+    "preTrendPeriods": [
+      "2018-06-30",
+      "2018-09-30",
+      "2019-03-31"
+    ],
+    "interpretation": "Descriptive sector benchmark, not causal identification. Show each peer and leave-one-out range. No Genuine verdict if peer pre-trends fail."
+  },
+  "stressScenarios": [
+    {
+      "id": "revised-rbi-divergence",
+      "metric": "gnpa_ratio",
+      "numeratorOverride": 71972,
+      "denominator": 697824,
+      "sourceId": "bob-divergence-20",
+      "status": "sensitivity_only_indexed_primary",
+      "note": "Revised historical classification increases baseline by2048/697824*100 percentage points. Denominator is held fixed as a scenario assumption. Do not add this to a flow already including divergence or call it synergy."
+    },
+    {
+      "id": "old-rbi-divergence",
+      "metric": "gnpa_ratio",
+      "numeratorOverride": 75174,
+      "denominator": 697824,
+      "sourceId": "bob-divergence-19",
+      "status": "superseded_do_not_use",
+      "note": "Earlier version retained for audit trail; superseded by FY2020 annual disclosure."
+    }
+  ],
+  "managementClaims": [
+    {
+      "claim": "Economies of scale, operating cost savings and broader network/products",
+      "announcedTarget": "Qualitative; no quantified rupee synergy target verified in reviewed primary sources",
+      "sourceId": "announcement",
+      "outcome": "FY2020 issuer reports 650+ branches and 110+ ATMs rationalized; 152 Vijaya branches migrated. IT integration remained underway.",
+      "outcomeSourceId": "bob-q4-20",
+      "outcomeLocator": "pp45–46",
+      "caution": "Operational milestones do not establish realized financial savings; FY2019 one-offs and treasury gains contaminate cost/income comparison."
+    }
+  ],
+  "comparability": [
+    {
+      "category": "accounting",
+      "note": "Use global standalone bank figures throughout. The issuer disclosed pooling of interests under AS 14 in its June 2019 results note. This is not acquisition/fair-value accounting. The word consolidated in opening amalgamation slides sometimes means combined three banks, whereas statutory consolidated statements include subsidiaries. Eliminations and reserve adjustments still require review.",
+      "sourceIds": [
+        "bob-results-20",
+        "bob-q1-20"
+      ]
+    },
+    {
+      "category": "profitability",
+      "note": "FY2020 PAT546.18 follows pretax loss1802.11 and tax credit2348.29. A positive PAT is not proof of improved operations; underlying tax recognition needs separate review.",
+      "sourceIds": [
+        "bob-results-20"
+      ]
+    },
+    {
+      "category": "one_offs",
+      "note": "Issuer explicitly attributes Q4 operating-expense comparison partly to prior-year amalgamation one-offs; precise comparable adjustment not verified.",
+      "sourceIds": [
+        "bob-q4-20"
+      ]
+    },
+    {
+      "category": "capital",
+      "note": "Capital infusion and share issuance accompany merger; EPS and capital ratios cannot be attributed to merger operations without isolating issuance.",
+      "sourceIds": [
+        "bob-q1-20",
+        "bob-results-20"
+      ]
+    },
+    {
+      "category": "regulatory_relief",
+      "note": "COVID19 moratorium/asset-classification relief and uncompleted integration affect March2020 interpretation. No quantified bank-specific GNPA relief adjustment is verified; treat as an unresolved gate.",
+      "sourceIds": [
+        "bob-q4-20",
+        "bom-q4-20"
+      ]
+    }
+  ],
+  "quarantined": [
+    {
+      "metric": "dena_gnpa_ratio",
+      "value": 10.91,
+      "sourceId": "bob-q1-20",
+      "locator": "p6",
+      "reason": "Implausible with reported combined ratio and precursor net loan sizes; inconsistent primary slide. Not used."
+    },
+    {
+      "metric": "gross_advances",
+      "entity": "combined",
+      "period": "2019-06-30",
+      "value": 678322,
+      "sourceId": "bob-q1-20",
+      "locator": "p42",
+      "reason": "Superseded by678142 in Q2FY20 p40; revision not fully explained."
+    },
+    {
+      "metric": "cost_income_ratio",
+      "entity": "combined",
+      "period": "2019-03-31",
+      "value": 53.19,
+      "sourceId": "bob-q1-20",
+      "locator": "p6",
+      "reason": "Differs from52.01 in FY20 annual presentation; retain audit trail and uncertainty."
+    },
+    {
+      "metric": "gnpa_movement_components",
+      "sourceId": "bob-q4-20",
+      "locator": "p34",
+      "reason": "Annual recovery/upgradation subtotals conflict with quarterly columns; not ingested as validated waterfall inputs."
+    }
+  ],
+  "interpretation": {
+    "overallVerdict": "Too early to tell",
+    "evidenceStrength": "Weak",
+    "factStrength": "Moderate",
+    "finding": "The combined GNPA ratio fell during the first year, but fell less than either selected peer and improved below the premerger baseline in only the fourth postmerger quarter. Arithmetic supports a descriptive improvement; evidence does not establish merger-caused improvement.",
+    "counterargument": "Integration may yield benefits later; these peers have very different starting risks, and RBI reclassification changes the historical baseline. A weak first-year peer gap can understate eventual operating gains.",
+    "falsification": "A fully reconciled predecessor series, comparable relief-adjusted post data, stable favourable peer gaps across defensible peer sets and at least four sustained post-transition quarters would challenge the current inconclusive attribution.",
+    "strengthReasons": [
+      "Official transaction and financial statements support event and selected facts.",
+      "Independent three-bank GNPA reconstruction incomplete; issuer aggregation unadjusted.",
+      "Only four post quarters and incomplete prehistory; first-three quarter ratios above baseline.",
+      "Pre-trend nonparallel and two heterogeneous peers; regulatory and accounting effects not isolated."
+    ]
+  },
+  "limitations": [
+    "An 8–12 quarter full predecessor panel is not included; actual GNPA coverage is three combined pre-merger observations and four post-merger quarters.",
+    "Sources accessed publicly, no bypass. Large or blocked source PDFs not fully retrieved; manual licensed upload/review remains necessary.",
+    "Source documents are not bundled; extracted factual cells and source links only. Presentation reuse terms require review before public redistribution.",
+    "No current bank investment recommendation; historical research demonstration.",
+    "The selected event and published factual cells are verified; the full predecessor-by-predecessor analytical reconstruction is not complete.",
+    "Publication dates remain explicitly unknown for several archived sources. Retrieval proves availability only by 16 October 2026; do not use those sources for an earlier as-of backtest.",
+    "Production report generation conservatively blocks automated causal verdicts. The rule engine is tested, but independent-evidence adjudication is not implemented."
+  ],
+  "comparisons": [
+    {
+      "id": "gross_npa_ratio",
+      "unit": "percent",
+      "definition": "Gross non-performing advances divided by gross advances at the same date; includes global standalone operations.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [
+        "Peer gaps are estimates under a descriptive benchmark, not proof of merger impact.",
+        "Presentation figures are rounded to INR crore; audited post GNPA is 69,381.43 crore versus presentation 69,381 crore.",
+        "Four post-quarter levels do not provide four peer-adjusted persistence observations."
+      ],
+      "evidence_strength": "Moderate for descriptive arithmetic; Weak for causal attribution",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:gnpa_ratio"
+        ]
+      },
+      "baseline": {
+        "numerator": [
+          "combined:2019-03-31:gnpa_amount"
+        ],
+        "denominator": [
+          "combined:2019-03-31:gross_advances"
+        ],
+        "note": "Issuer-aggregated predecessor amounts; not a reconciled independently reconstructed pro forma. Intercompany eliminations remain unresolved."
+      },
+      "post": {
+        "numerator": [
+          "combined:2020-03-31:gnpa_amount"
+        ],
+        "denominator": [
+          "combined:2020-03-31:gross_advances"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:gnpa_ratio"
+        ]
+      },
+      "reason": "The ratio improves against the issuer-aggregated baseline, but less than either selected peer. Unknown accounting and regulatory effects, heterogeneous peers and insufficient adjusted persistence prevent causal attribution.",
+      "peers": [
+        {
+          "name": "State Bank of India",
+          "pre": {
+            "reported": [
+              "sbi:2019-03-31:gnpa_ratio"
+            ]
+          },
+          "post": {
+            "reported": [
+              "sbi:2020-03-31:gnpa_ratio"
+            ]
+          },
+          "note": "Much larger;2017 associate-bank merger may still affect integration and cleanup. Different loan mix and recoveries. Three matching pre dates available; pre-trends are not parallel."
+        },
+        {
+          "name": "Bank of Maharashtra",
+          "pre": {
+            "reported": [
+              "bom:2019-03-31:gnpa_ratio"
+            ]
+          },
+          "post": {
+            "reported": [
+              "bom:2020-03-31:gnpa_ratio"
+            ]
+          },
+          "note": "Smaller and predominantly domestic; starting NPA substantially higher; only one matching pre point in included evidence, so pre-trend fit unavailable."
+        }
+      ],
+      "peer_notes": {
+        "selection_note": "Public-sector banks without an in-window whole-bank merger; SBI is much larger and Bank of Maharashtra is smaller with much higher starting NPA. Selection is descriptive, not a fitted control.",
+        "coincident_events": "Different recovery/write-off cycles, capital injections, older SBI integration, rate cycle and March 2020 COVID relief remain confounders.",
+        "pretrend_note": "Three shared pre dates (Jun 2018, Sep 2018, Mar 2019): combined GNPA 12.38%, 11.85%, 10.02%; SBI 10.69%, 9.95%, 7.53%. The gap widens from 1.69 to 2.49 pp (+0.80 pp); parallel pre-trends are not established. Maharashtra has only one matched pre point. No synthetic model is fitted."
+      },
+      "path": [
+        {
+          "period": "2018-06-30",
+          "operand": {
+            "numerator": [
+              "combined:2018-06-30:gnpa_amount"
+            ],
+            "denominator": [
+              "combined:2018-06-30:gross_advances"
+            ]
+          }
+        },
+        {
+          "period": "2018-09-30",
+          "operand": {
+            "numerator": [
+              "combined:2018-09-30:gnpa_amount"
+            ],
+            "denominator": [
+              "combined:2018-09-30:gross_advances"
+            ]
+          }
+        },
+        {
+          "period": "2019-03-31",
+          "operand": {
+            "numerator": [
+              "combined:2019-03-31:gnpa_amount"
+            ],
+            "denominator": [
+              "combined:2019-03-31:gross_advances"
+            ]
+          }
+        },
+        {
+          "period": "2019-06-30",
+          "operand": {
+            "numerator": [
+              "combined:2019-06-30:gnpa_amount"
+            ],
+            "denominator": [
+              "combined:2019-06-30:gross_advances"
+            ]
+          }
+        },
+        {
+          "period": "2019-09-30",
+          "operand": {
+            "numerator": [
+              "combined:2019-09-30:gnpa_amount"
+            ],
+            "denominator": [
+              "combined:2019-09-30:gross_advances"
+            ]
+          }
+        },
+        {
+          "period": "2019-12-31",
+          "operand": {
+            "numerator": [
+              "combined:2019-12-31:gnpa_amount"
+            ],
+            "denominator": [
+              "combined:2019-12-31:gross_advances"
+            ]
+          }
+        },
+        {
+          "period": "2020-03-31",
+          "operand": {
+            "numerator": [
+              "combined:2020-03-31:gnpa_amount"
+            ],
+            "denominator": [
+              "combined:2020-03-31:gross_advances"
+            ]
+          }
+        }
+      ],
+      "uncertainty": {
+        "low": 0.46622135516809227,
+        "high": 2.9697050989201,
+        "note": "Illustrative residual sensitivity range only: combine each single-peer choice with the disclosed revised opening GNPA classification stress (denominator held fixed). Not a confidence interval or a bound on all unknowns. Original superseded 5,250 crore divergence is not used.",
+        "scenarios": [
+          {
+            "label": "Reported opening classification",
+            "baseline": 10.020291649470353
+          },
+          {
+            "label": "Revised RBI classification, fixed-denominator assumption",
+            "baseline": 10.313775393222361,
+            "source": "bob-divergence-20"
+          }
+        ]
+      }
+    },
+    {
+      "id": "net_npa_ratio",
+      "unit": "percent",
+      "definition": "Net non-performing advances divided by reported net advances at date. Eligible regulatory deductions can differ from balance-sheet net advances; reconciliation to reported ratio is required.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [
+        "Peer gaps are estimates under a descriptive benchmark, not proof of merger impact.",
+        "Presentation figures are rounded to INR crore; audited post GNPA is 69,381.43 crore versus presentation 69,381 crore.",
+        "Four post-quarter levels do not provide four peer-adjusted persistence observations."
+      ],
+      "evidence_strength": "Moderate for descriptive arithmetic; Weak for causal attribution",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "numerator": [
+          "bob:2019-03-31:net_npa_amount"
+        ],
+        "denominator": [
+          "bob:2019-03-31:net_advances"
+        ]
+      },
+      "baseline": {
+        "numerator": [
+          "combined:2019-03-31:net_npa_amount"
+        ],
+        "denominator": [
+          "combined:2019-03-31:net_advances"
+        ],
+        "note": "Issuer-aggregated predecessor amounts; not a reconciled independently reconstructed pro forma. Intercompany eliminations remain unresolved."
+      },
+      "post": {
+        "numerator": [
+          "combined:2020-03-31:net_npa_amount"
+        ],
+        "denominator": [
+          "combined:2020-03-31:net_advances"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:net_npa_ratio"
+        ]
+      },
+      "reason": "The ratio improves against the issuer-aggregated baseline, but less than either selected peer. Unknown accounting and regulatory effects, heterogeneous peers and insufficient adjusted persistence prevent causal attribution.",
+      "peers": [
+        {
+          "name": "State Bank of India",
+          "pre": {
+            "reported": [
+              "sbi:2019-03-31:net_npa_ratio"
+            ]
+          },
+          "post": {
+            "reported": [
+              "sbi:2020-03-31:net_npa_ratio"
+            ]
+          },
+          "note": "Much larger;2017 associate-bank merger may still affect integration and cleanup. Different loan mix and recoveries. Three matching pre dates available; pre-trends are not parallel."
+        },
+        {
+          "name": "Bank of Maharashtra",
+          "pre": {
+            "reported": [
+              "bom:2019-03-31:net_npa_ratio"
+            ]
+          },
+          "post": {
+            "reported": [
+              "bom:2020-03-31:net_npa_ratio"
+            ]
+          },
+          "note": "Smaller and predominantly domestic; starting NPA substantially higher; only one matching pre point in included evidence, so pre-trend fit unavailable."
+        }
+      ],
+      "peer_notes": {
+        "selection_note": "Public-sector banks without an in-window whole-bank merger; SBI is much larger and Bank of Maharashtra is smaller with much higher starting NPA. Selection is descriptive, not a fitted control.",
+        "coincident_events": "Different recovery/write-off cycles, capital injections, older SBI integration, rate cycle and March 2020 COVID relief remain confounders."
+      },
+      "path": [
+        {
+          "period": "2019-03-31",
+          "operand": {
+            "numerator": [
+              "combined:2019-03-31:net_npa_amount"
+            ],
+            "denominator": [
+              "combined:2019-03-31:net_advances"
+            ]
+          }
+        },
+        {
+          "period": "2019-06-30",
+          "operand": {
+            "numerator": [
+              "combined:2019-06-30:net_npa_amount"
+            ],
+            "denominator": [
+              "combined:2019-06-30:net_advances"
+            ]
+          }
+        },
+        {
+          "period": "2019-12-31",
+          "operand": {
+            "numerator": [
+              "combined:2019-12-31:net_npa_amount"
+            ],
+            "denominator": [
+              "combined:2019-12-31:net_advances"
+            ]
+          }
+        },
+        {
+          "period": "2020-03-31",
+          "operand": {
+            "numerator": [
+              "combined:2020-03-31:net_npa_amount"
+            ],
+            "denominator": [
+              "combined:2020-03-31:net_advances"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cost_to_income",
+      "unit": "percent",
+      "definition": "Annual operating expenses / (net interest income + other income); provisions and taxes excluded.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [
+        "All income and expense amounts cover the full fiscal year. Operating income = interest income − interest expense + other income.",
+        "The earlier issuer baseline of 53.19% conflicts with the later 52.01% disclosure. Latest underlying amounts are used; original version is quarantined, not erased.",
+        "Accounting and one-offs are unquantified and remain in the residual; sector is unavailable."
+      ],
+      "evidence_strength": "Moderate for arithmetic; Weak for attribution",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "numerator": [
+          "bob:2019-03-31:operating_expenses"
+        ],
+        "denominator": [
+          "bob:2019-03-31:interest_income",
+          "bob:2019-03-31:other_income"
+        ],
+        "denominator_subtract": [
+          "bob:2019-03-31:interest_expense"
+        ]
+      },
+      "baseline": {
+        "numerator": [
+          "combined:2019-03-31:operating_expenses"
+        ],
+        "denominator": [
+          "combined:2019-03-31:net_interest_income",
+          "combined:2019-03-31:other_income"
+        ]
+      },
+      "post": {
+        "numerator": [
+          "combined:2020-03-31:operating_expenses"
+        ],
+        "denominator": [
+          "combined:2020-03-31:interest_income",
+          "combined:2020-03-31:other_income"
+        ],
+        "denominator_subtract": [
+          "combined:2020-03-31:interest_expense"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:cost_income_ratio"
+        ]
+      },
+      "reason": "Annual cost/income improves against the three-bank baseline, while remaining above the acquirer-only level. Prior-year amalgamation expenses and other-income composition are not isolated, and no validated peer counterfactual is available."
+    },
+    {
+      "id": "casa",
+      "unit": "percent",
+      "definition": "Closing global current and savings deposits / closing global deposits. Do not substitute domestic CASA.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [
+        "Acquirer domestic CASA of 40.24% is retained in observations but is not substituted for a global ratio.",
+        "This deposit mix metric is not applicable to a non-deposit-taking NBFC."
+      ],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "baseline": {
+        "numerator": [
+          "combined:2019-03-31:casa_deposits"
+        ],
+        "denominator": [
+          "combined:2019-03-31:deposits"
+        ]
+      },
+      "post": {
+        "numerator": [
+          "combined:2020-03-31:casa_deposits"
+        ],
+        "denominator": [
+          "combined:2020-03-31:deposits"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:casa_ratio"
+        ]
+      },
+      "reason": "Global CASA can be calculated for combined baseline and post. Acquirer-only verified CASA is domestic and is excluded from this global comparison."
+    },
+    {
+      "id": "provision_coverage",
+      "unit": "percent",
+      "definition": "Issuer PCR including technical write-offs; distinct from on-balance-sheet provisions/GNPA.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:pcr_including_two_ratio"
+        ]
+      },
+      "baseline": {
+        "reported": [
+          "combined:2019-03-31:pcr_including_two_ratio"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:pcr_including_two_ratio"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:pcr_including_two_ratio"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported."
+    },
+    {
+      "id": "capital_adequacy",
+      "unit": "percent",
+      "definition": "Regulatory capital / risk-weighted assets. Neither simple ratio averaging nor ordinary equity/total assets is valid.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [
+        "Opening amalgamated April 1 capital ratios are in observations, but are not substituted for a March 31 premerger pro-forma baseline. Capital injections and deductions require separate reconstruction."
+      ],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:capital_ratio"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:capital_ratio"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:capital_ratio"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported."
+    },
+    {
+      "id": "cet1",
+      "unit": "percent",
+      "definition": "CET1 capital / risk-weighted assets; reported only.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [
+        "Opening amalgamated April 1 capital ratios are in observations, but are not substituted for a March 31 premerger pro-forma baseline. Capital injections and deductions require separate reconstruction."
+      ],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:cet1_ratio"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:cet1_ratio"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:cet1_ratio"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported."
+    },
+    {
+      "id": "eps",
+      "unit": "INR/share",
+      "definition": "Attributable annual earnings / weighted-average ordinary shares; merger swap and capital issuance prevent direct historical aggregation.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:eps_basic"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:eps_basic"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:eps_basic"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported."
+    },
+    {
+      "id": "nim",
+      "unit": "percent",
+      "definition": "Annual NII / average interest-earning assets. Quarterly values require annualization and consistent average asset basis.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [
+        "Annual global NIM is 2.64% for combined FY2019 and 2.73% for FY2020. Quarterly March 2020 global NIM of 2.67% is a different period and is not substituted.",
+        "Average interest-earning assets are not verified, so these issuer ratios are reported-only and no reconstructed NIM waterfall is enabled."
+      ],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:nim"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported.",
+      "baseline": {
+        "reported": [
+          "combined:2019-03-31:nim"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:nim"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:nim"
+        ]
+      }
+    },
+    {
+      "id": "roa",
+      "unit": "percent",
+      "definition": "Annual PAT / average assets; reported ratios retained, not rebuilt from closing assets.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:roa"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:roa"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:roa"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported."
+    },
+    {
+      "id": "roe",
+      "unit": "percent",
+      "definition": "Annual attributable earnings / average ordinary equity; equivalent shareholder perimeter required.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "reason": "No verified comparable series is available. This field is intentionally missing."
+    },
+    {
+      "id": "slippage_ratio",
+      "unit": "percent",
+      "definition": "Issuer reported annual ratio; do not confuse fresh slippages with all NPA additions.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:slippage_ratio"
+        ]
+      },
+      "baseline": {
+        "reported": [
+          "combined:2019-03-31:slippage_ratio"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:slippage_ratio"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:slippage_ratio"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported."
+    },
+    {
+      "id": "credit_cost",
+      "unit": "percent",
+      "definition": "Issuer reported annual credit-cost ratio; provision scope and averaging require verification before reconstruction.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "acquirer": {
+        "reported": [
+          "bob:2019-03-31:credit_cost"
+        ]
+      },
+      "baseline": {
+        "reported": [
+          "combined:2019-03-31:credit_cost"
+        ]
+      },
+      "post": {
+        "reported": [
+          "combined:2020-03-31:credit_cost"
+        ]
+      },
+      "reported_post": {
+        "reported": [
+          "combined:2020-03-31:credit_cost"
+        ]
+      },
+      "reason": "Selected original reported figures are shown, but comparable underlying amounts, adjustments and a credible peer series are incomplete. No causal verdict is supported."
+    },
+    {
+      "id": "cost_of_funds",
+      "unit": "percent",
+      "definition": "Interest cost / consistent average interest-bearing funding including borrowing; unavailable.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "reason": "No verified comparable series is available. This field is intentionally missing."
+    },
+    {
+      "id": "book_value_per_share",
+      "unit": "INR/share",
+      "definition": "Consistent ordinary book equity / actual ending shares; do not mix share application money or revaluation conventions.",
+      "pre_period": "2019-03-31",
+      "post_period": "2020-03-31",
+      "post_quarters": 4,
+      "notes": [],
+      "evidence_strength": "Weak",
+      "evidence_gates": {
+        "comparable": false,
+        "independent_evidence": false,
+        "peer_robust": false,
+        "persistent": false,
+        "transition": true
+      },
+      "reason": "No verified comparable series is available. This field is intentionally missing."
+    }
+  ],
+  "executiveFinding": "The combined GNPA ratio fell during the first year, but fell less than either selected peer and improved below the premerger baseline in only the fourth postmerger quarter. Arithmetic supports a descriptive improvement; evidence does not establish merger-caused improvement.",
+  "subtitle": "2019 statutory amalgamation · first-year historical comparison · evidence reviewed 16 October 2026",
+  "challenge": {
+    "counterargument": "Integration may yield benefits later; these peers have very different starting risks, and RBI reclassification changes the historical baseline. A weak first-year peer gap can understate eventual operating gains.",
+    "falsification": "A fully reconciled predecessor series, comparable relief-adjusted post data, stable favourable peer gaps across defensible peer sets and at least four sustained post-transition quarters would challenge the current inconclusive attribution.",
+    "synergies": [
+      {
+        "claim": "Economies of scale, operating cost savings and broader network/products",
+        "announcedTarget": "Qualitative; no quantified rupee synergy target verified in reviewed primary sources",
+        "sourceId": "announcement",
+        "outcome": "FY2020 issuer reports 650+ branches and 110+ ATMs rationalized; 152 Vijaya branches migrated. IT integration remained underway.",
+        "outcomeSourceId": "bob-q4-20",
+        "outcomeLocator": "pp45–46",
+        "caution": "Operational milestones do not establish realized financial savings; FY2019 one-offs and treasury gains contaminate cost/income comparison."
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018-09-17",
+      "label": "Proposed amalgamation",
+      "description": "Three public-sector banks; continuing entity Bank of Baroda.",
+      "sources": [
+        "announcement"
+      ]
+    },
+    {
+      "date": "2019-01-02",
+      "label": "Government scheme approved",
+      "description": "Statutory scheme under section 9 of the 1970/1980 Acts, not a private-bank 44A scheme.",
+      "sources": [
+        "scheme"
+      ]
+    },
+    {
+      "date": "2019-03-11",
+      "label": "Share entitlement record date",
+      "description": "402 BoB shares per 1,000 Vijaya shares; 110 per 1,000 Dena shares.",
+      "sources": [
+        "scheme"
+      ]
+    },
+    {
+      "date": "2019-04-01",
+      "label": "Undertakings transferred",
+      "description": "Entire undertakings vest in Bank of Baroda.",
+      "sources": [
+        "scheme"
+      ]
+    },
+    {
+      "date": "2019-06-30",
+      "label": "First combined period end",
+      "description": "Quarter ended June 30, 2019.",
+      "sources": [
+        "bob-q1-20"
+      ]
+    },
+    {
+      "date": "2019-07-25",
+      "label": "First combined results released",
+      "description": "First results reflecting the legal amalgamation.",
+      "sources": [
+        "bob-q1-20"
+      ]
+    }
+  ]
+}

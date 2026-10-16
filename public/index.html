@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="An auditable comparison of bank merger outcomes, financial reconstruction and source evidence.">
+  <title>Merger Comparison Engine</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to analysis</a>
+  <header class="masthead">
+    <a href="/" class="brand" aria-label="Merger Comparison Engine home"><span class="brand-mark" aria-hidden="true">M<span>∕</span>E</span><span>Merger<br>Comparison Engine</span></a>
+    <span class="masthead-note">Evidence before inference</span>
+    <div class="exports"><a href="/report.html" download class="button secondary">Export report</a><a href="/report.json" download class="text-link">JSON</a></div>
+  </header>
+  <nav class="section-nav" aria-label="Report sections">
+    <a href="#finding">Finding</a><a href="#timeline">The transaction</a><a href="#metrics">Financial comparison</a><a href="#decomposition">Attribution</a><a href="#evidence">Evidence</a><a href="#review">Review a document</a>
+  </nav>
+  <main id="main">
+    <div id="load-state" class="loading-state" role="status"><span class="eyebrow">Preparing the case</span><div class="skeleton title"></div><div class="skeleton"></div><div class="skeleton short"></div><p>Loading the verified evidence and calculations…</p></div>
+    <div id="load-error" class="notice error" hidden role="alert"><h1>The report could not be loaded.</h1><p id="load-error-message"></p><button id="retry" class="button">Try again</button></div>
+    <article id="report" hidden>
+      <section id="finding" class="report-intro" aria-labelledby="case-title">
+        <div class="intro-topline"><span class="eyebrow">Merger case study <span id="case-id"></span></span><span id="as-of" class="meta"></span></div>
+        <h1 id="case-title"></h1><p id="case-subtitle" class="lede"></p>
+        <div class="finding-grid"><div class="finding-main"><span class="eyebrow">Executive finding · interpretation</span><h2 id="verdict"></h2><p id="summary"></p></div><aside class="finding-evidence"><span class="eyebrow">Evidence strength</span><p id="evidence-strength" class="strength"></p><ul id="finding-reasons" class="compact-list"></ul></aside></div>
+        <div class="reading-key" aria-label="How to read this report"><span><i class="key fact" aria-hidden="true"></i>Reported fact</span><span><i class="key estimate" aria-hidden="true"></i>Calculated estimate</span><span><i class="key interpretation" aria-hidden="true"></i>Interpretation</span><span class="muted">Missing values remain missing.</span></div>
+      </section>
+      <section id="timeline" class="report-section" aria-labelledby="timeline-title"><div class="section-heading"><div><span class="section-number">01</span><h2 id="timeline-title">The transaction</h2></div><span class="category">Reported facts</span></div><ol id="timeline-list" class="timeline"></ol><div id="entity-map"></div><div id="transaction-note" class="note"></div></section>
+      <section id="metrics" class="report-section" aria-labelledby="metrics-title"><div class="section-heading"><div><span class="section-number">02</span><h2 id="metrics-title">What changed, and is it comparable?</h2></div><span class="category">Facts + calculated estimates</span></div><p class="section-description">The combined baseline uses reconstructed amounts or a disclosed issuer aggregate. Review its basis and unresolved adjustments before interpreting a change.</p><div id="reconstruction-detail"></div><div id="metrics-table" class="table-scroll" tabindex="0" role="region" aria-label="Financial comparison, scroll horizontally if needed"></div><p class="table-note">Ratio levels are percentages; ratio changes are percentage points (pp). A lower NPA ratio is favourable; a lower profitability ratio is not. “Not available” never means zero.</p><details><summary>Comparability notes and their sources</summary><div id="comparability-detail"></div></details></section>
+      <section id="decomposition" class="report-section" aria-labelledby="decomposition-title"><div class="section-heading"><div><span class="section-number">03</span><h2 id="decomposition-title">Separate the change from the explanation</h2></div><label class="metric-picker">Inspect metric<select id="metric-select"></select></label></div><div id="metric-detail" aria-live="polite"></div></section>
+      <section id="peers" class="report-section" aria-labelledby="peers-title"><div class="section-heading"><div><span class="section-number">04</span><h2 id="peers-title">The counterfactual</h2></div><span class="category">Calculated estimate</span></div><div id="peer-detail"></div></section>
+      <section id="challenge" class="report-section" aria-labelledby="challenge-title"><div class="section-heading"><div><span class="section-number">05</span><h2 id="challenge-title">Challenge the finding</h2></div><span class="category">Interpretation</span></div><div id="challenge-detail" class="challenge-grid"></div><details><summary>Decision rules and analytical limits</summary><div id="methodology"></div></details></section>
+      <section id="evidence" class="report-section" aria-labelledby="sources-title"><div class="section-heading"><div><span class="section-number">06</span><h2 id="sources-title">Follow the evidence</h2></div><span id="source-count" class="meta"></span></div><div id="limitations" class="notice"></div><div id="sources-list" class="sources-list"></div><details id="observations"><summary>Inspect the underlying reported observations</summary><p>Original observations are retained separately from derived ratios. The full register is also included in the exported report.</p><div id="observations-table" class="table-scroll" tabindex="0" role="region" aria-label="Underlying observation register, scroll horizontally if needed"></div><div class="observation-pagination"><button type="button" class="button secondary" id="observations-previous">Previous page</button><span id="observations-status" role="status"></span><button type="button" class="button secondary" id="observations-next">Next page</button></div></details></section>
+      <section id="legal" class="report-section" aria-labelledby="legal-title"><div class="section-heading"><div><span class="section-number">07</span><h2 id="legal-title">Legal applicability</h2></div><span class="category">Research, subject to review</span></div><p id="legal-note" class="section-description"></p><details><summary>Inspect the applicability matrix</summary><div id="legal-matrix" class="table-scroll" tabindex="0" role="region" aria-label="Legal applicability matrix, scroll horizontally if needed"></div></details></section>
+    </article>
+    <section id="review" class="report-section review-section" aria-labelledby="review-title"><div class="section-heading"><div><span class="section-number">+</span><h2 id="review-title">Bring another document into review</h2></div><span class="category">Unverified input</span></div><p class="section-description">Review a filing excerpt or upload a document. Candidate events and numbers remain separate from the verified case until their units, period, totals and source have been reconciled.</p>
+      <form id="review-form" novalidate>
+        <div class="form-grid"><div class="field wide"><label for="document-file">Document <span class="optional">optional</span></label><input id="document-file" type="file" accept=".txt,.csv,.json,.pdf" aria-describedby="file-help"><p id="file-help" class="field-help">TXT, CSV, JSON or PDF, up to 5 MB. Scanned PDFs may need manual transcription.</p></div><div class="field wide"><label for="review-text">Filing excerpt</label><textarea id="review-text" name="text" rows="7" maxlength="200000" placeholder="Paste a table or an announcement, including its headings and units…" aria-describedby="text-error"></textarea><span id="text-error" class="field-error"></span></div><div class="field"><label for="source-url">Source URL <span class="optional">optional</span></label><input type="url" id="source-url" name="source_url" placeholder="https://issuer.example/filing.pdf" autocomplete="url" aria-describedby="url-error"><span id="url-error" class="field-error"></span></div><div class="field"><label for="entity">Reporting entity <span class="optional">optional</span></label><input id="entity" name="entity" autocomplete="organization" placeholder="Entity as named in the filing…"></div><div class="field"><label for="period">Reporting period <span class="optional">optional</span></label><input id="period" name="period" placeholder="For example, year ended 31 March 2025…"></div><div class="field"><label for="unit">Reported unit <span class="optional">optional</span></label><input id="unit" name="unit" placeholder="For example, ₹ crore or %…"></div></div>
+        <div class="form-actions"><button id="review-submit" class="button" type="submit">Extract for review<span class="working" hidden aria-hidden="true"> …</span></button><p id="review-status" role="status" aria-live="polite">No new data will enter the verified report.</p></div>
+      </form><div id="review-result" hidden tabindex="-1"></div>
+    </section>
+  </main>
+  <footer><p>Merger Comparison Engine <span aria-hidden="true">/</span> Research evidence, made inspectable.</p><p>No buy, sell, hold or personalised investment recommendations.</p><a href="#main">Back to top ↑</a></footer>
+  <noscript><p class="notice">JavaScript is needed for the interactive report. <a href="/report.html">Open the readable HTML report</a>.</p></noscript>
+</body>
+</html>

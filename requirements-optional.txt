@@ -1,0 +1,2 @@
+# Only needed for text PDF extraction; the dashboard uses the Python standard library.
+pypdf==6.10.0
